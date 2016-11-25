@@ -1,0 +1,58 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Microsoft.Policies.AttachmentManager"></using>
+    <using prefix="ns1" namespace="Microsoft.Policies.AutoPlay"></using>
+    <using prefix="ns2" namespace="Microsoft.Policies.ControlPanelDisplay"></using>
+    <using prefix="ns3" namespace="Microsoft.Policies.HelpAndSupport"></using>
+    <using prefix="ns4" namespace="Microsoft.Policies.NetworkSharing"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:AM_CallIOfficeAntiVirus" commentText="$(resource.ns0_AM_CallIOfficeAntiVirus)"></comment>
+      <comment policyRef="ns0:AM_MarkZoneOnSavedAtttachments" commentText="$(resource.ns0_AM_MarkZoneOnSavedAtttachments)"></comment>
+      <comment policyRef="ns0:AM_RemoveZoneInfo" commentText="$(resource.ns0_AM_RemoveZoneInfo)"></comment>
+      <comment policyRef="ns1:NoAutoplayfornonVolume" commentText="$(resource.ns1_NoAutoplayfornonVolume)"></comment>
+      <comment policyRef="ns2:CPL_Personalization_EnableScreenSaver" commentText="$(resource.ns2_CPL_Personalization_EnableScreenSaver)"></comment>
+      <comment policyRef="ns2:CPL_Personalization_ScreenSaverIsSecure" commentText="$(resource.ns2_CPL_Personalization_ScreenSaverIsSecure)"></comment>
+      <comment policyRef="ns2:CPL_Personalization_ScreenSaverTimeOut" commentText="$(resource.ns2_CPL_Personalization_ScreenSaverTimeOut)"></comment>
+      <comment policyRef="ns3:HPExplicitFeedback" commentText="$(resource.ns3_HPExplicitFeedback)"></comment>
+      <comment policyRef="ns3:HPImplicitFeedback" commentText="$(resource.ns3_HPImplicitFeedback)"></comment>
+      <comment policyRef="ns4:NoInplaceSharing" commentText="$(resource.ns4_NoInplaceSharing)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_AM_CallIOfficeAntiVirus">Rule Title:  Notify antivirus when file attachments are opened.
+STIG ID: 5.136  Rule ID: SV-25207r1_rule  Vuln ID: V-14270
+Severity: CAT II Class: Unclass</string>
+      <string id="ns0_AM_MarkZoneOnSavedAtttachments">Rule Title:  Preserve zone information when saving attachments.
+STIG ID: 5.134  Rule ID: SV-25205r1_rule  Vuln ID: V-14268
+Severity: CAT II Class: Unclass</string>
+      <string id="ns0_AM_RemoveZoneInfo">Rule Title:  Hide mechanism for removing zone information from file attachments.
+STIG ID: 5.135  Rule ID: SV-25206r1_rule  Vuln ID: V-14269
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_NoAutoplayfornonVolume">Rule Title:  Turn off autoplay for non-volume devices.
+STIG ID: 5.280  Rule ID: SV-25299r1_rule  Vuln ID: V-21973
+Severity: CAT II Class: Unclass</string>
+      <string id="ns2_CPL_Personalization_EnableScreenSaver">Rule Title:  The system configuration is not set with a password-protected screen saver.
+STIG ID: 5.006  Rule ID: SV-25201r1_rule  Vuln ID: V-1122
+Severity: CAT II Class: Unclass</string>
+      <string id="ns2_CPL_Personalization_ScreenSaverIsSecure">Rule Title:  The system configuration is not set with a password-protected screen saver.
+STIG ID: 5.006  Rule ID: SV-25201r1_rule  Vuln ID: V-1122
+Severity: CAT II Class: Unclass</string>
+      <string id="ns2_CPL_Personalization_ScreenSaverTimeOut">Rule Title:  The system configuration is not set with a password-protected screen saver.
+STIG ID: 5.006  Rule ID: SV-25201r1_rule  Vuln ID: V-1122
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_HPExplicitFeedback">Rule Title:  Disable Help Ratings feed back.
+STIG ID: 5.256  Rule ID: SV-25203r1_rule  Vuln ID: V-16048
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_HPImplicitFeedback">Rule Title:  Help Experience Improvement Program is disabled.
+STIG ID: 5.255  Rule ID: SV-25202r1_rule  Vuln ID: V-16021
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_NoInplaceSharing">Rule Title:  Prevent users from sharing files from within their profiles.
+STIG ID: 5.253  Rule ID: SV-25208r1_rule  Vuln ID: V-15727
+Severity: CAT II Class: Unclass</string>
+    </stringTable>
+  </resources>
+</policyComments>
