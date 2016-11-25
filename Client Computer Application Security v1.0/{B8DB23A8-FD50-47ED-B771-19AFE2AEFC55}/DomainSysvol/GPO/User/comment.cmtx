@@ -1,0 +1,22 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Microsoft.Policies.InternetExplorer"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:RestrictFormSuggest" commentText="$(resource.ns0_RestrictFormSuggest)"></comment>
+      <comment policyRef="ns0:RestrictFormSuggestPW" commentText="$(resource.ns0_RestrictFormSuggestPW)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_RestrictFormSuggest">Rule Title:  AutoComplete feature for forms must be disallowed.
+STIG ID: DTBI690-IE11  Rule ID: SV-59673r1_rule  Vuln ID: V-46807
+Severity: CAT II Class: Unclass</string>
+      <string id="ns0_RestrictFormSuggestPW">Rule Title:  Turn on the auto-complete feature for user names and passwords on forms must be disabled.
+STIG ID: DTBI725-IE11  Rule ID: SV-59681r1_rule  Vuln ID: V-46815
+Severity: CAT II Class: Unclass</string>
+    </stringTable>
+  </resources>
+</policyComments>

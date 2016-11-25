@@ -1,0 +1,629 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Microsoft.Policies.GroupPolicy"></using>
+    <using prefix="ns1" namespace="Microsoft.Policies.InternetExplorer"></using>
+    <using prefix="ns2" namespace="inf15.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns3" namespace="office15.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns4" namespace="office16.Office.Microsoft.Policies.Windows"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:UserPolicyMode" commentText="$(resource.ns0_UserPolicyMode)"></comment>
+      <comment policyRef="ns1:AddonManagement_DisableAddonLoadTimePerformanceNotifications" commentText="$(resource.ns1_AddonManagement_DisableAddonLoadTimePerformanceNotifications)"></comment>
+      <comment policyRef="ns1:AddonManagement_RestrictCrashDetection" commentText="$(resource.ns1_AddonManagement_RestrictCrashDetection)"></comment>
+      <comment policyRef="ns1:AddonManagement_RestrictExtensionManagement" commentText="$(resource.ns1_AddonManagement_RestrictExtensionManagement)"></comment>
+      <comment policyRef="ns1:Advanced_AlwaysSendDoNotTrack" commentText="$(resource.ns1_Advanced_AlwaysSendDoNotTrack)"></comment>
+      <comment policyRef="ns1:Advanced_CDUnlock" commentText="$(resource.ns1_Advanced_CDUnlock)"></comment>
+      <comment policyRef="ns1:Advanced_CertificateRevocation" commentText="$(resource.ns1_Advanced_CertificateRevocation)"></comment>
+      <comment policyRef="ns1:Advanced_DisableEPMCompat" commentText="$(resource.ns1_Advanced_DisableEPMCompat)"></comment>
+      <comment policyRef="ns1:Advanced_DownloadSignatures" commentText="$(resource.ns1_Advanced_DownloadSignatures)"></comment>
+      <comment policyRef="ns1:Advanced_EnableBrowserExtensions" commentText="$(resource.ns1_Advanced_EnableBrowserExtensions)"></comment>
+      <comment policyRef="ns1:Advanced_EnableEnhancedProtectedMode" commentText="$(resource.ns1_Advanced_EnableEnhancedProtectedMode)"></comment>
+      <comment policyRef="ns1:Advanced_EnableEnhancedProtectedMode64Bit" commentText="$(resource.ns1_Advanced_EnableEnhancedProtectedMode64Bit)"></comment>
+      <comment policyRef="ns1:Advanced_InternetExplorerUpdates" commentText="$(resource.ns1_Advanced_InternetExplorerUpdates)"></comment>
+      <comment policyRef="ns1:Advanced_InvalidSignatureBlock" commentText="$(resource.ns1_Advanced_InvalidSignatureBlock)"></comment>
+      <comment policyRef="ns1:Advanced_SetWinInetProtocols" commentText="$(resource.ns1_Advanced_SetWinInetProtocols)"></comment>
+      <comment policyRef="ns1:AllowServicePoweredQSA" commentText="$(resource.ns1_AllowServicePoweredQSA)"></comment>
+      <comment policyRef="ns1:CompatView_UseMSList" commentText="$(resource.ns1_CompatView_UseMSList)"></comment>
+      <comment policyRef="ns1:DBHDisableDeleteHistory" commentText="$(resource.ns1_DBHDisableDeleteHistory)"></comment>
+      <comment policyRef="ns1:DBHDisableDeleteOnExit" commentText="$(resource.ns1_DBHDisableDeleteOnExit)"></comment>
+      <comment policyRef="ns1:DisableActiveXFirstPrompt" commentText="$(resource.ns1_DisableActiveXFirstPrompt)"></comment>
+      <comment policyRef="ns1:DisableInPrivateBrowsing" commentText="$(resource.ns1_DisableInPrivateBrowsing)"></comment>
+      <comment policyRef="ns1:Disable_Managing_Safety_Filter_IE9" commentText="$(resource.ns1_Disable_Managing_Safety_Filter_IE9)"></comment>
+      <comment policyRef="ns1:Disable_Security_Settings_Check" commentText="$(resource.ns1_Disable_Security_Settings_Check)"></comment>
+      <comment policyRef="ns1:EnableAutoUpgrade" commentText="$(resource.ns1_EnableAutoUpgrade)"></comment>
+      <comment policyRef="ns1:EnableSuggestedSites" commentText="$(resource.ns1_EnableSuggestedSites)"></comment>
+      <comment policyRef="ns1:GeolocationDisable" commentText="$(resource.ns1_GeolocationDisable)"></comment>
+      <comment policyRef="ns1:IESF_DisablePasswordRevealButton" commentText="$(resource.ns1_IESF_DisablePasswordRevealButton)"></comment>
+      <comment policyRef="ns1:IESF_PolicyExplorerProcesses_10" commentText="$(resource.ns1_IESF_PolicyExplorerProcesses_10)"></comment>
+      <comment policyRef="ns1:IESF_PolicyExplorerProcesses_11" commentText="$(resource.ns1_IESF_PolicyExplorerProcesses_11)"></comment>
+      <comment policyRef="ns1:IESF_PolicyExplorerProcesses_12" commentText="$(resource.ns1_IESF_PolicyExplorerProcesses_12)"></comment>
+      <comment policyRef="ns1:IESF_PolicyExplorerProcesses_3" commentText="$(resource.ns1_IESF_PolicyExplorerProcesses_3)"></comment>
+      <comment policyRef="ns1:IESF_PolicyExplorerProcesses_5" commentText="$(resource.ns1_IESF_PolicyExplorerProcesses_5)"></comment>
+      <comment policyRef="ns1:IESF_PolicyExplorerProcesses_6" commentText="$(resource.ns1_IESF_PolicyExplorerProcesses_6)"></comment>
+      <comment policyRef="ns1:IESF_PolicyExplorerProcesses_8" commentText="$(resource.ns1_IESF_PolicyExplorerProcesses_8)"></comment>
+      <comment policyRef="ns1:IESF_PolicyExplorerProcesses_9" commentText="$(resource.ns1_IESF_PolicyExplorerProcesses_9)"></comment>
+      <comment policyRef="ns1:IZ_PolicyAccessDataSourcesAcrossDomains_1" commentText="$(resource.ns1_IZ_PolicyAccessDataSourcesAcrossDomains_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyAccessDataSourcesAcrossDomains_7" commentText="$(resource.ns1_IZ_PolicyAccessDataSourcesAcrossDomains_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyActiveScripting_7" commentText="$(resource.ns1_IZ_PolicyActiveScripting_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyAllowMETAREFRESH_7" commentText="$(resource.ns1_IZ_PolicyAllowMETAREFRESH_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyAllowPasteViaScript_1" commentText="$(resource.ns1_IZ_PolicyAllowPasteViaScript_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyAllowPasteViaScript_7" commentText="$(resource.ns1_IZ_PolicyAllowPasteViaScript_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyAntiMalwareCheckingOfActiveXControls_1" commentText="$(resource.ns1_IZ_PolicyAntiMalwareCheckingOfActiveXControls_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyAntiMalwareCheckingOfActiveXControls_3" commentText="$(resource.ns1_IZ_PolicyAntiMalwareCheckingOfActiveXControls_3)"></comment>
+      <comment policyRef="ns1:IZ_PolicyAntiMalwareCheckingOfActiveXControls_5" commentText="$(resource.ns1_IZ_PolicyAntiMalwareCheckingOfActiveXControls_5)"></comment>
+      <comment policyRef="ns1:IZ_PolicyAntiMalwareCheckingOfActiveXControls_7" commentText="$(resource.ns1_IZ_PolicyAntiMalwareCheckingOfActiveXControls_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyAntiMalwareCheckingOfActiveXControls_9" commentText="$(resource.ns1_IZ_PolicyAntiMalwareCheckingOfActiveXControls_9)"></comment>
+      <comment policyRef="ns1:IZ_PolicyBinaryBehaviors_7" commentText="$(resource.ns1_IZ_PolicyBinaryBehaviors_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyBlockPopupWindows_1" commentText="$(resource.ns1_IZ_PolicyBlockPopupWindows_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyBlockPopupWindows_3" commentText="$(resource.ns1_IZ_PolicyBlockPopupWindows_3)"></comment>
+      <comment policyRef="ns1:IZ_PolicyBlockPopupWindows_7" commentText="$(resource.ns1_IZ_PolicyBlockPopupWindows_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDownloadSignedActiveX_1" commentText="$(resource.ns1_IZ_PolicyDownloadSignedActiveX_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDownloadSignedActiveX_3" commentText="$(resource.ns1_IZ_PolicyDownloadSignedActiveX_3)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDownloadSignedActiveX_7" commentText="$(resource.ns1_IZ_PolicyDownloadSignedActiveX_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDownloadUnsignedActiveX_1" commentText="$(resource.ns1_IZ_PolicyDownloadUnsignedActiveX_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDownloadUnsignedActiveX_7" commentText="$(resource.ns1_IZ_PolicyDownloadUnsignedActiveX_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Internet" commentText="$(resource.ns1_IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Internet)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Restricted" commentText="$(resource.ns1_IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Restricted)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Internet" commentText="$(resource.ns1_IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Internet)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Restricted" commentText="$(resource.ns1_IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Restricted)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDropOrPasteFiles_1" commentText="$(resource.ns1_IZ_PolicyDropOrPasteFiles_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyDropOrPasteFiles_7" commentText="$(resource.ns1_IZ_PolicyDropOrPasteFiles_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyFileDownload_7" commentText="$(resource.ns1_IZ_PolicyFileDownload_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyFontDownload_1" commentText="$(resource.ns1_IZ_PolicyFontDownload_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyFontDownload_7" commentText="$(resource.ns1_IZ_PolicyFontDownload_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyInstallDesktopItems_7" commentText="$(resource.ns1_IZ_PolicyInstallDesktopItems_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyJavaPermissions_1" commentText="$(resource.ns1_IZ_PolicyJavaPermissions_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyJavaPermissions_10" commentText="$(resource.ns1_IZ_PolicyJavaPermissions_10)"></comment>
+      <comment policyRef="ns1:IZ_PolicyJavaPermissions_2" commentText="$(resource.ns1_IZ_PolicyJavaPermissions_2)"></comment>
+      <comment policyRef="ns1:IZ_PolicyJavaPermissions_3" commentText="$(resource.ns1_IZ_PolicyJavaPermissions_3)"></comment>
+      <comment policyRef="ns1:IZ_PolicyJavaPermissions_4" commentText="$(resource.ns1_IZ_PolicyJavaPermissions_4)"></comment>
+      <comment policyRef="ns1:IZ_PolicyJavaPermissions_5" commentText="$(resource.ns1_IZ_PolicyJavaPermissions_5)"></comment>
+      <comment policyRef="ns1:IZ_PolicyJavaPermissions_6" commentText="$(resource.ns1_IZ_PolicyJavaPermissions_6)"></comment>
+      <comment policyRef="ns1:IZ_PolicyJavaPermissions_7" commentText="$(resource.ns1_IZ_PolicyJavaPermissions_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyJavaPermissions_8" commentText="$(resource.ns1_IZ_PolicyJavaPermissions_8)"></comment>
+      <comment policyRef="ns1:IZ_PolicyJavaPermissions_9" commentText="$(resource.ns1_IZ_PolicyJavaPermissions_9)"></comment>
+      <comment policyRef="ns1:IZ_PolicyLaunchAppsAndFilesInIFRAME_1" commentText="$(resource.ns1_IZ_PolicyLaunchAppsAndFilesInIFRAME_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyLaunchAppsAndFilesInIFRAME_7" commentText="$(resource.ns1_IZ_PolicyLaunchAppsAndFilesInIFRAME_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyLogon_1" commentText="$(resource.ns1_IZ_PolicyLogon_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyLogon_7" commentText="$(resource.ns1_IZ_PolicyLogon_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyMimeSniffingURLaction_1" commentText="$(resource.ns1_IZ_PolicyMimeSniffingURLaction_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyMimeSniffingURLaction_7" commentText="$(resource.ns1_IZ_PolicyMimeSniffingURLaction_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyNavigateSubframesAcrossDomains_1" commentText="$(resource.ns1_IZ_PolicyNavigateSubframesAcrossDomains_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyNavigateSubframesAcrossDomains_7" commentText="$(resource.ns1_IZ_PolicyNavigateSubframesAcrossDomains_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyNotificationBarDownloadURLaction_1" commentText="$(resource.ns1_IZ_PolicyNotificationBarDownloadURLaction_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyNotificationBarDownloadURLaction_7" commentText="$(resource.ns1_IZ_PolicyNotificationBarDownloadURLaction_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Internet" commentText="$(resource.ns1_IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Internet)"></comment>
+      <comment policyRef="ns1:IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Restricted" commentText="$(resource.ns1_IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Restricted)"></comment>
+      <comment policyRef="ns1:IZ_PolicyRenderLegacyFilters_1" commentText="$(resource.ns1_IZ_PolicyRenderLegacyFilters_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyRenderLegacyFilters_7" commentText="$(resource.ns1_IZ_PolicyRenderLegacyFilters_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyRunActiveXControls_3" commentText="$(resource.ns1_IZ_PolicyRunActiveXControls_3)"></comment>
+      <comment policyRef="ns1:IZ_PolicyRunActiveXControls_7" commentText="$(resource.ns1_IZ_PolicyRunActiveXControls_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyScriptActiveXMarkedSafe_7" commentText="$(resource.ns1_IZ_PolicyScriptActiveXMarkedSafe_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyScriptActiveXNotMarkedSafe_1" commentText="$(resource.ns1_IZ_PolicyScriptActiveXNotMarkedSafe_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyScriptActiveXNotMarkedSafe_7" commentText="$(resource.ns1_IZ_PolicyScriptActiveXNotMarkedSafe_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyScriptingOfJavaApplets_7" commentText="$(resource.ns1_IZ_PolicyScriptingOfJavaApplets_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicySignedFrameworkComponentsURLaction_1" commentText="$(resource.ns1_IZ_PolicySignedFrameworkComponentsURLaction_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicySignedFrameworkComponentsURLaction_7" commentText="$(resource.ns1_IZ_PolicySignedFrameworkComponentsURLaction_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyTurnOnXSSFilter_Both_Internet" commentText="$(resource.ns1_IZ_PolicyTurnOnXSSFilter_Both_Internet)"></comment>
+      <comment policyRef="ns1:IZ_PolicyTurnOnXSSFilter_Both_Restricted" commentText="$(resource.ns1_IZ_PolicyTurnOnXSSFilter_Both_Restricted)"></comment>
+      <comment policyRef="ns1:IZ_PolicyUnsignedFrameworkComponentsURLaction_1" commentText="$(resource.ns1_IZ_PolicyUnsignedFrameworkComponentsURLaction_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyUnsignedFrameworkComponentsURLaction_7" commentText="$(resource.ns1_IZ_PolicyUnsignedFrameworkComponentsURLaction_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyUserdataPersistence_1" commentText="$(resource.ns1_IZ_PolicyUserdataPersistence_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyUserdataPersistence_7" commentText="$(resource.ns1_IZ_PolicyUserdataPersistence_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyWarnCertMismatch" commentText="$(resource.ns1_IZ_PolicyWarnCertMismatch)"></comment>
+      <comment policyRef="ns1:IZ_PolicyWindowsRestrictionsURLaction_1" commentText="$(resource.ns1_IZ_PolicyWindowsRestrictionsURLaction_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyWindowsRestrictionsURLaction_7" commentText="$(resource.ns1_IZ_PolicyWindowsRestrictionsURLaction_7)"></comment>
+      <comment policyRef="ns1:IZ_PolicyZoneElevationURLaction_1" commentText="$(resource.ns1_IZ_PolicyZoneElevationURLaction_1)"></comment>
+      <comment policyRef="ns1:IZ_PolicyZoneElevationURLaction_7" commentText="$(resource.ns1_IZ_PolicyZoneElevationURLaction_7)"></comment>
+      <comment policyRef="ns1:IZ_Policy_AllowScriptlets_1" commentText="$(resource.ns1_IZ_Policy_AllowScriptlets_1)"></comment>
+      <comment policyRef="ns1:IZ_Policy_AllowScriptlets_7" commentText="$(resource.ns1_IZ_Policy_AllowScriptlets_7)"></comment>
+      <comment policyRef="ns1:IZ_Policy_FirstRunOptIn_1" commentText="$(resource.ns1_IZ_Policy_FirstRunOptIn_1)"></comment>
+      <comment policyRef="ns1:IZ_Policy_FirstRunOptIn_7" commentText="$(resource.ns1_IZ_Policy_FirstRunOptIn_7)"></comment>
+      <comment policyRef="ns1:IZ_Policy_LocalPathForUpload_1" commentText="$(resource.ns1_IZ_Policy_LocalPathForUpload_1)"></comment>
+      <comment policyRef="ns1:IZ_Policy_LocalPathForUpload_7" commentText="$(resource.ns1_IZ_Policy_LocalPathForUpload_7)"></comment>
+      <comment policyRef="ns1:IZ_Policy_ScriptStatusBar_1" commentText="$(resource.ns1_IZ_Policy_ScriptStatusBar_1)"></comment>
+      <comment policyRef="ns1:IZ_Policy_ScriptStatusBar_7" commentText="$(resource.ns1_IZ_Policy_ScriptStatusBar_7)"></comment>
+      <comment policyRef="ns1:IZ_Policy_TurnOnProtectedMode_1" commentText="$(resource.ns1_IZ_Policy_TurnOnProtectedMode_1)"></comment>
+      <comment policyRef="ns1:IZ_Policy_TurnOnProtectedMode_7" commentText="$(resource.ns1_IZ_Policy_TurnOnProtectedMode_7)"></comment>
+      <comment policyRef="ns1:IZ_Policy_UnsafeFiles_1" commentText="$(resource.ns1_IZ_Policy_UnsafeFiles_1)"></comment>
+      <comment policyRef="ns1:IZ_Policy_UnsafeFiles_7" commentText="$(resource.ns1_IZ_Policy_UnsafeFiles_7)"></comment>
+      <comment policyRef="ns1:IZ_Policy_WebBrowserControl_1" commentText="$(resource.ns1_IZ_Policy_WebBrowserControl_1)"></comment>
+      <comment policyRef="ns1:IZ_Policy_WebBrowserControl_7" commentText="$(resource.ns1_IZ_Policy_WebBrowserControl_7)"></comment>
+      <comment policyRef="ns1:IZ_Policy_XAML_1" commentText="$(resource.ns1_IZ_Policy_XAML_1)"></comment>
+      <comment policyRef="ns1:IZ_Policy_XAML_7" commentText="$(resource.ns1_IZ_Policy_XAML_7)"></comment>
+      <comment policyRef="ns1:IZ_UNCAsIntranet" commentText="$(resource.ns1_IZ_UNCAsIntranet)"></comment>
+      <comment policyRef="ns1:NoFirstRunCustomise" commentText="$(resource.ns1_NoFirstRunCustomise)"></comment>
+      <comment policyRef="ns1:RestrictAutoconfig" commentText="$(resource.ns1_RestrictAutoconfig)"></comment>
+      <comment policyRef="ns1:RestrictDomainSuggestion" commentText="$(resource.ns1_RestrictDomainSuggestion)"></comment>
+      <comment policyRef="ns1:RestrictHistory" commentText="$(resource.ns1_RestrictHistory)"></comment>
+      <comment policyRef="ns1:SQM_DisableCEIP" commentText="$(resource.ns1_SQM_DisableCEIP)"></comment>
+      <comment policyRef="ns1:Security_HKLM_only" commentText="$(resource.ns1_Security_HKLM_only)"></comment>
+      <comment policyRef="ns1:Security_options_edit" commentText="$(resource.ns1_Security_options_edit)"></comment>
+      <comment policyRef="ns1:Security_zones_map_edit" commentText="$(resource.ns1_Security_zones_map_edit)"></comment>
+      <comment policyRef="ns1:TurnOffAccelerators" commentText="$(resource.ns1_TurnOffAccelerators)"></comment>
+      <comment policyRef="ns1:TurnOnActiveXFiltering" commentText="$(resource.ns1_TurnOnActiveXFiltering)"></comment>
+      <comment policyRef="ns1:UpdateIntervalPol" commentText="$(resource.ns1_UpdateIntervalPol)"></comment>
+      <comment policyRef="ns1:UpdatePagePol" commentText="$(resource.ns1_UpdatePagePol)"></comment>
+      <comment policyRef="ns1:UserProxy" commentText="$(resource.ns1_UserProxy)"></comment>
+      <comment policyRef="ns2:L_InfoPathAPTCAAssemblyAllowableListEnforcement" commentText="$(resource.ns2_L_InfoPathAPTCAAssemblyAllowableListEnforcement)"></comment>
+      <comment policyRef="ns3:L_AddonManagement" commentText="$(resource.ns3_L_AddonManagement)"></comment>
+      <comment policyRef="ns3:L_Bindtoobject" commentText="$(resource.ns3_L_Bindtoobject)"></comment>
+      <comment policyRef="ns3:L_Blockpopups" commentText="$(resource.ns3_L_Blockpopups)"></comment>
+      <comment policyRef="ns3:L_Disableusernameandpassword" commentText="$(resource.ns3_L_Disableusernameandpassword)"></comment>
+      <comment policyRef="ns3:L_EnableAutomaticUpdates" commentText="$(resource.ns3_L_EnableAutomaticUpdates)"></comment>
+      <comment policyRef="ns3:L_HideEnableDisableUpdates" commentText="$(resource.ns3_L_HideEnableDisableUpdates)"></comment>
+      <comment policyRef="ns3:L_NavigateURL" commentText="$(resource.ns3_L_NavigateURL)"></comment>
+      <comment policyRef="ns3:L_ProtectionFromZoneElevation" commentText="$(resource.ns3_L_ProtectionFromZoneElevation)"></comment>
+      <comment policyRef="ns3:L_RestrictActiveXInstall" commentText="$(resource.ns3_L_RestrictActiveXInstall)"></comment>
+      <comment policyRef="ns3:L_RestrictFileDownload" commentText="$(resource.ns3_L_RestrictFileDownload)"></comment>
+      <comment policyRef="ns3:L_SavedfromURL" commentText="$(resource.ns3_L_SavedfromURL)"></comment>
+      <comment policyRef="ns3:L_ScriptedWindowSecurityRestrictions" commentText="$(resource.ns3_L_ScriptedWindowSecurityRestrictions)"></comment>
+      <comment policyRef="ns4:L_EnableAutomaticUpdates" commentText="$(resource.ns4_L_EnableAutomaticUpdates)"></comment>
+      <comment policyRef="ns4:L_HideEnableDisableUpdates" commentText="$(resource.ns4_L_HideEnableDisableUpdates)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_UserPolicyMode">Required for user settings to take affect</string>
+      <string id="ns1_AddonManagement_DisableAddonLoadTimePerformanceNotifications">Rule Title:  Add-on performance notifications must be disallowed.
+STIG ID: DTBI745-IE11  Rule ID: SV-59687r1_rule  Vuln ID: V-46821
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_AddonManagement_RestrictCrashDetection">Rule Title:  Crash Detection management must be enforced.
+STIG ID: DTBI715-IE11  Rule ID: SV-59677r1_rule  Vuln ID: V-46811
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_AddonManagement_RestrictExtensionManagement">Rule Title:  Ability for users to enable or disable add-ons must be managed.
+STIG ID: DTBI697-IE11  Rule ID: SV-59675r1_rule  Vuln ID: V-46809
+Severity: CAT III Class: Unclass</string>
+      <string id="ns1_Advanced_AlwaysSendDoNotTrack">Rule Title:  Do Not Track header must be sent.
+STIG ID: DTBI1040-IE11  Rule ID: SV-59427r1_rule  Vuln ID: V-46563
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_Advanced_CDUnlock">Rule Title:  Active content from CDs must be disallowed to run on user machines.
+STIG ID: DTBI340-IE11  Rule ID: SV-59487r1_rule  Vuln ID: V-46623
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_Advanced_CertificateRevocation">Rule Title:  Checking for server certificate revocation must be enforced.
+STIG ID: DTBI365-IE11  Rule ID: SV-59493r1_rule  Vuln ID: V-46629
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_Advanced_DisableEPMCompat">Rule Title:  When Enhanced Protected Mode is enabled, ActiveX controls must be disallowed to run in Protected Mode.
+STIG ID: DTBI985-IE11  Rule ID: SV-59841r1_rule  Vuln ID: V-46975
+Severity: CAT II Class: Unclass
+Only used in 64bit systems</string>
+      <string id="ns1_Advanced_DownloadSignatures">Rule Title:  Checking for signatures on downloaded programs must be enforced.
+STIG ID: DTBI370-IE11  Rule ID: SV-59497r1_rule  Vuln ID: V-46633
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_Advanced_EnableBrowserExtensions">Rule Title:  Third-party browser extensions must be disallowed.
+STIG ID: DTBI355-IE11  Rule ID: SV-59491r2_rule  Vuln ID: V-46627
+Severity: CAT II Class: Unclass
+Most Companies require this</string>
+      <string id="ns1_Advanced_EnableEnhancedProtectedMode">Rule Title:  Enhanced Protected Mode functionality must be enforced.
+STIG ID: DTBI995-IE11  Rule ID: SV-59853r2_rule  Vuln ID: V-46987
+Severity: CAT II Class: Unclass
+Only used for 64 bit systems</string>
+      <string id="ns1_Advanced_EnableEnhancedProtectedMode64Bit">Rule Title:  The 64-bit tab processes, when running in Enhanced Protected Mode on 64-bit versions of Windows, must be turned on.
+STIG ID: DTBI356-IE11  Rule ID: SV-59861r1_rule  Vuln ID: V-46995
+Severity: CAT II Class: Unclass
+Only used on 64bit systems</string>
+      <string id="ns1_Advanced_InternetExplorerUpdates">Rule Title:  Automatic checking for Internet Explorer updates must be disallowed.
+STIG ID: DTBI775-IE11  Rule ID: SV-59711r1_rule  Vuln ID: V-46845
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_Advanced_InvalidSignatureBlock">Rule Title:  Software must be disallowed to run or install with invalid signatures.
+STIG ID: DTBI350-IE11  Rule ID: SV-59489r2_rule  Vuln ID: V-46625
+Severity: CAT II Class: Unclass
+Turned Off.  Too confusing for users.</string>
+      <string id="ns1_Advanced_SetWinInetProtocols">Rule Title:  The Internet Explorer TLS parameter must be set correctly.
+STIG ID: DTBI014-IE11  Rule ID: SV-59337r2_rule  Vuln ID: V-46473
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_AllowServicePoweredQSA">Rule Title:  Microsoft services to provide enhanced suggestions as the user types in the Address bar must be disallowed.
+STIG ID: DTBI766-IE11  Rule ID: SV-59855r1_rule  Vuln ID: V-46989
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_CompatView_UseMSList">Rule Title:  Updates to website lists from Microsoft must be disallowed.
+STIG ID: DTBI750-IE11  Rule ID: SV-59689r1_rule  Vuln ID: V-46823
+Severity: CAT III Class: Unclass</string>
+      <string id="ns1_DBHDisableDeleteHistory">Rule Title:  Deleting websites that the user has visited must be disallowed.
+STIG ID: DTBI770-IE11  Rule ID: SV-59707r1_rule  Vuln ID: V-46841
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_DBHDisableDeleteOnExit">Rule Title:  Browser must retain history on exit.
+STIG ID: DTBI760-IE11  Rule ID: SV-59695r1_rule  Vuln ID: V-46829
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_DisableActiveXFirstPrompt">Rule Title:  ActiveX opt-in prompt must be disallowed.
+STIG ID: DTBI805-IE11  Rule ID: SV-59717r1_rule  Vuln ID: V-46851
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_DisableInPrivateBrowsing">Rule Title:  InPrivate Browsing must be disallowed.
+STIG ID: DTBI780-IE11  Rule ID: SV-59713r1_rule  Vuln ID: V-46847
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_Disable_Managing_Safety_Filter_IE9">Rule Title:  Managing SmartScreen Filter use must be enforced.
+STIG ID: DTBI740-IE11  Rule ID: SV-59685r1_rule  Vuln ID: V-46819
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_Disable_Security_Settings_Check">Rule Title:  Security checking features must be enforced.
+STIG ID: DTBI325-IE11  Rule ID: SV-59485r1_rule  Vuln ID: V-46621
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_EnableAutoUpgrade">Rule Title:  Ability to install new versions of Internet Explorer automatically must be disallowed.
+STIG ID: DTBI980-IE11  Rule ID: SV-59809r1_rule  Vuln ID: V-46943
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_EnableSuggestedSites">Rule Title:  Suggested Sites functionality must be disallowed.
+STIG ID: DTBI765-IE11  Rule ID: SV-59699r1_rule  Vuln ID: V-46833
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_GeolocationDisable">Rule Title:  Browser Geolocation functionality must be disallowed.
+STIG ID: DTBI755-IE11  Rule ID: SV-59691r1_rule  Vuln ID: V-46825
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IESF_DisablePasswordRevealButton">Rule Title:  Displaying of the reveal password button must be disallowed.
+STIG ID: DTBI1035-IE11  Rule ID: SV-59423r1_rule  Vuln ID: V-46559
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IESF_PolicyExplorerProcesses_10">Rule Title:  Internet Explorer Processes for Notification Bars must be enforced (Reserved).
+STIG ID: DTBI815-IE11  Rule ID: SV-59723r1_rule  Vuln ID: V-46857
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IESF_PolicyExplorerProcesses_11">Rule Title:  Internet Explorer Processes Restrict ActiveX Install must be enforced (Reserved).
+STIG ID: DTBI900-IE11  Rule ID: SV-59763r1_rule  Vuln ID: V-46897
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IESF_PolicyExplorerProcesses_12">Rule Title:  Internet Explorer Processes for Restrict File Download must be enforced (Reserved).
+STIG ID: DTBI630-IE11  Rule ID: SV-59597r1_rule  Vuln ID: V-46733
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IESF_PolicyExplorerProcesses_3">Rule Title:  Internet Explorer Processes for MK protocol must be enforced (Reserved).
+STIG ID: DTBI599-IE11  Rule ID: SV-59585r1_rule  Vuln ID: V-46721
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IESF_PolicyExplorerProcesses_5">Rule Title:  Internet Explorer Processes for MIME handling must be enforced. (Reserved)
+STIG ID: DTBI590-IE11  Rule ID: SV-59573r1_rule  Vuln ID: V-46709
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IESF_PolicyExplorerProcesses_6">Rule Title:  Internet Explorer Processes for MIME sniffing must be enforced (iexplore).
+STIG ID: DTBI597-IE11  Rule ID: SV-59583r1_rule  Vuln ID: V-46719
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IESF_PolicyExplorerProcesses_8">Rule Title:  Internet Explorer Processes for Restrict File Download must be enforced (iexplore).
+STIG ID: DTBI640-IE11  Rule ID: SV-59647r1_rule  Vuln ID: V-46781
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IESF_PolicyExplorerProcesses_9">Rule Title:  Internet Explorer Processes for Zone Elevation must be enforced (Reserved).
+STIG ID: DTBI610-IE11  Rule ID: SV-59591r1_rule  Vuln ID: V-46727
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyAccessDataSourcesAcrossDomains_1">Rule Title:  Accessing data sources across domains must be disallowed (Internet zone).
+STIG ID: DTBI032-IE11  Rule ID: SV-59373r1_rule  Vuln ID: V-46509
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyAccessDataSourcesAcrossDomains_7">Rule Title:  Accessing data sources across domains must be disallowed (Restricted Sites zone).
+STIG ID: DTBI122-IE11  Rule ID: SV-59453r1_rule  Vuln ID: V-46589
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyActiveScripting_7">Rule Title:  Active scripting must be disallowed (Restricted Sites Zone).
+STIG ID: DTBI133-IE11  Rule ID: SV-59467r1_rule  Vuln ID: V-46603
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyAllowMETAREFRESH_7">Rule Title:  The Allow META REFRESH property must be disallowed (Restricted Sites zone).
+STIG ID: DTBI123-IE11  Rule ID: SV-59455r1_rule  Vuln ID: V-46591
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyAllowPasteViaScript_1">Rule Title:  Clipboard operations via script must be disallowed (Internet zone).
+STIG ID: DTBI044-IE11  Rule ID: SV-59385r1_rule  Vuln ID: V-46521
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyAllowPasteViaScript_7">Rule Title:  Clipboard operations via script must be disallowed (Restricted Sites zone).
+STIG ID: DTBI134-IE11  Rule ID: SV-59469r1_rule  Vuln ID: V-46605
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyAntiMalwareCheckingOfActiveXControls_1">Rule Title:  Anti-Malware programs against ActiveX controls must be run for the Internet zone.
+STIG ID: DTBI1046-IE11  Rule ID: SV-59863r1_rule  Vuln ID: V-46997
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyAntiMalwareCheckingOfActiveXControls_3">Rule Title:  Anti-Malware programs against ActiveX controls must be run for the Intranet zone.
+STIG ID: DTBI062-IE11  Rule ID: SV-59865r1_rule  Vuln ID: V-46999
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyAntiMalwareCheckingOfActiveXControls_5">Rule Title:  Anti-Malware programs against ActiveX controls must be run for the Trusted Sites zone.
+STIG ID: DTBI092-IE11  Rule ID: SV-59875r1_rule  Vuln ID: V-47009
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyAntiMalwareCheckingOfActiveXControls_7">Rule Title:  The Download signed ActiveX controls property must be disallowed (Restricted Sites zone).
+STIG ID: DTBI112-IE11  Rule ID: SV-59437r1_rule  Vuln ID: V-46573
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyAntiMalwareCheckingOfActiveXControls_9">Rule Title:  Anti-Malware programs against ActiveX controls must be run for the Local Machine zone.
+STIG ID: DTBI426-IE11  Rule ID: SV-59869r1_rule  Vuln ID: V-47003
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyBinaryBehaviors_7">Rule Title:  Allow binary and script behaviors must be disallowed (Restricted Sites zone).
+STIG ID: DTBI575-IE11  Rule ID: SV-59565r1_rule  Vuln ID: V-46701
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyBlockPopupWindows_1">Rule Title:  Pop-up Blocker must be enforced (Internet zone).
+STIG ID: DTBI495-IE11  Rule ID: SV-59553r1_rule  Vuln ID: V-46689
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyBlockPopupWindows_3">Rule Title:  Pop-up Blocker must be enforced (Internet zone).
+STIG ID: DTBI495-IE11  Rule ID: SV-59553r1_rule  Vuln ID: V-46689
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyBlockPopupWindows_7">Rule Title:  Pop-up Blocker must be enforced (Internet zone).
+STIG ID: DTBI495-IE11  Rule ID: SV-59553r1_rule  Vuln ID: V-46689
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyDownloadSignedActiveX_1">Rule Title:  The Download signed ActiveX controls property must be disallowed (Internet zone).
+STIG ID: DTBI022-IE11  Rule ID: SV-59345r1_rule  Vuln ID: V-46481
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyDownloadSignedActiveX_3">Allows users to download signed ActiveX controls for the internal network</string>
+      <string id="ns1_IZ_PolicyDownloadSignedActiveX_7">Rule Title:  The Download signed ActiveX controls property must be disallowed (Restricted Sites zone).
+STIG ID: DTBI112-IE11  Rule ID: SV-59437r1_rule  Vuln ID: V-46573
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyDownloadUnsignedActiveX_1">Rule Title:  The Download unsigned ActiveX controls property must be disallowed (Internet zone).
+STIG ID: DTBI023-IE11  Rule ID: SV-59347r1_rule  Vuln ID: V-46483
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyDownloadUnsignedActiveX_7">Rule Title:  The Download unsigned ActiveX controls property must be disallowed (Restricted Sites zone).
+STIG ID: DTBI113-IE11  Rule ID: SV-59439r1_rule  Vuln ID: V-46575
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Internet">Rule Title:  Dragging of content from different domains across windows must be disallowed (Internet zone).
+STIG ID: DTBI990-IE11  Rule ID: SV-59847r1_rule  Vuln ID: V-46981
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Restricted">Rule Title:  Dragging of content from different domains across windows must be disallowed (Restricted Sites zone).
+STIG ID: DTBI1005-IE11  Rule ID: SV-59411r1_rule  Vuln ID: V-46547
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Internet">Rule Title:  Dragging of content from different domains within a window must be disallowed (Internet zone).
+STIG ID: DTBI1000-IE11  Rule ID: SV-59409r1_rule  Vuln ID: V-46545
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Restricted">Rule Title:  Dragging of content from different domains within a window must be disallowed (Restricted Sites zone).
+STIG ID: DTBI1025-IE11  Rule ID: SV-59419r1_rule  Vuln ID: V-46555
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyDropOrPasteFiles_1">Rule Title:  Functionality to drag and drop or copy and paste files must be disallowed (Internet zone).
+STIG ID: DTBI036-IE11  Rule ID: SV-59375r1_rule  Vuln ID: V-46511
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyDropOrPasteFiles_7">Rule Title:  Functionality to drag and drop or copy and paste files must be disallowed (Restricted Sites zone).
+STIG ID: DTBI126-IE11  Rule ID: SV-59457r1_rule  Vuln ID: V-46593
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyFileDownload_7">Rule Title:  File downloads must be disallowed (Restricted Sites zone).
+STIG ID: DTBI119-IE11  Rule ID: SV-59447r1_rule  Vuln ID: V-46583
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyFontDownload_1">Rule Title:  Font downloads must be disallowed (Internet zone).
+STIG ID: DTBI030-IE11  Rule ID: SV-59369r1_rule  Vuln ID: V-46505
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyFontDownload_7">Rule Title:  Font downloads must be disallowed (Restricted Sites zone).
+STIG ID: DTBI120-IE11  Rule ID: SV-59449r1_rule  Vuln ID: V-46585
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyInstallDesktopItems_7">Rule Title:  Installation of desktop items must be disallowed (Restricted Sites zone).
+STIG ID: DTBI127-IE11  Rule ID: SV-59459r1_rule  Vuln ID: V-46595
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyJavaPermissions_1">Rule Title:  The Java permissions must be disallowed (Internet zone).
+STIG ID: DTBI031-IE11  Rule ID: SV-59371r1_rule  Vuln ID: V-46507
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyJavaPermissions_10">Rule Title:  Java permissions must be disallowed (Locked Down Local Machine zone).
+STIG ID: DTBI430-IE11  Rule ID: SV-59511r1_rule  Vuln ID: V-46647
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyJavaPermissions_2">Rule Title:  Java permissions must be disallowed (Locked Down Internet zone).
+STIG ID: DTBI445-IE11  Rule ID: SV-59525r1_rule  Vuln ID: V-46661
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyJavaPermissions_3">Rule Title:  Java permissions must be configured with High Safety (Intranet zone).
+STIG ID: DTBI061-IE11  Rule ID: SV-59389r1_rule  Vuln ID: V-46525
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyJavaPermissions_4">Rule Title:  Java permissions must be disallowed (Locked Down Intranet zone).
+STIG ID: DTBI435-IE11  Rule ID: SV-59513r1_rule  Vuln ID: V-46649
+Severity: CAT II Class: Unclass - Override STIG</string>
+      <string id="ns1_IZ_PolicyJavaPermissions_5">Rule Title:  Java permissions must be configured with High Safety (Trusted Sites zone).
+STIG ID: DTBI091-IE11  Rule ID: SV-59407r1_rule  Vuln ID: V-46543
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyJavaPermissions_6">Rule Title:  Java permissions must be disallowed (Locked Down Trusted Sites zone).
+STIG ID: DTBI440-IE11  Rule ID: SV-59517r1_rule  Vuln ID: V-46653
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyJavaPermissions_7">Rule Title:  Java permissions must be disallowed (Restricted Sites zone).
+STIG ID: DTBI121-IE11  Rule ID: SV-59451r1_rule  Vuln ID: V-46587
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyJavaPermissions_8">Rule Title:  Java permissions must be disallowed (Locked Down Restricted Sites zone).
+STIG ID: DTBI450-IE11  Rule ID: SV-59527r1_rule  Vuln ID: V-46663
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyJavaPermissions_9">Rule Title:  Java permissions must be disallowed (Local Machine zone).
+STIG ID: DTBI425-IE11  Rule ID: SV-59509r1_rule  Vuln ID: V-46645
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyLaunchAppsAndFilesInIFRAME_1">Rule Title:  Launching programs and files in IFRAME must be disallowed (Internet zone).
+STIG ID: DTBI038-IE11  Rule ID: SV-59377r1_rule  Vuln ID: V-46513
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyLaunchAppsAndFilesInIFRAME_7">Rule Title:  Launching programs and files in IFRAME must be disallowed (Restricted Sites zone).
+STIG ID: DTBI128-IE11  Rule ID: SV-59461r1_rule  Vuln ID: V-46597
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyLogon_1">Rule Title:  Logon options must be configured to prompt (Internet zone).
+STIG ID: DTBI046-IE11  Rule ID: SV-59387r1_rule  Vuln ID: V-46523
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyLogon_7">Rule Title:  Logon options must be configured and enforced (Restricted Sites zone).
+STIG ID: DTBI136-IE11  Rule ID: SV-59471r1_rule  Vuln ID: V-46607
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyMimeSniffingURLaction_1">Rule Title:  MIME sniffing must be disallowed (Internet zone).
+STIG ID: DTBI465-IE11  Rule ID: SV-59537r1_rule  Vuln ID: V-46673
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyMimeSniffingURLaction_7">Rule Title:  MIME sniffing must be disallowed (Restricted Sites zone).
+STIG ID: DTBI470-IE11  Rule ID: SV-59539r1_rule  Vuln ID: V-46675
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyNavigateSubframesAcrossDomains_1">Rule Title:  Navigating windows and frames across different domains must be disallowed (Internet zone).
+STIG ID: DTBI039-IE11  Rule ID: SV-59379r1_rule  Vuln ID: V-46515
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyNavigateSubframesAcrossDomains_7">Rule Title:  Navigating windows and frames across different domains must be disallowed (Restricted Sites zone).
+STIG ID: DTBI129-IE11  Rule ID: SV-59463r1_rule  Vuln ID: V-46599
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyNotificationBarDownloadURLaction_1">Rule Title:  Automatic prompting for file downloads must be disallowed (Internet zone).
+STIG ID: DTBI415-IE11  Rule ID: SV-59507r1_rule  Vuln ID: V-46643
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyNotificationBarDownloadURLaction_7">Rule Title:  Automatic prompting for file downloads must be disallowed (Restricted Sites zone).
+STIG ID: DTBI580-IE11  Rule ID: SV-59569r1_rule  Vuln ID: V-46705
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Internet">Rule Title:  ActiveX controls without prompt property must be used in approved domains only (Internet zone).
+STIG ID: DTBI830-IE11  Rule ID: SV-59729r1_rule  Vuln ID: V-46865
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Restricted">Rule Title:  ActiveX controls without prompt property must be used in approved domains only (Restricted Sites zone).
+STIG ID: DTBI880-IE11  Rule ID: SV-59759r1_rule  Vuln ID: V-46893
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyRenderLegacyFilters_1">Rule Title:  Legacy filter functionality must be disallowed (Internet zone).
+STIG ID: DTBI1045-IE11  Rule ID: SV-59429r1_rule  Vuln ID: V-46565
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyRenderLegacyFilters_7">Rule Title:  Legacy filter functionality must be disallowed (Restricted Sites zone).
+STIG ID: DTBI1050-IE11  Rule ID: SV-59433r1_rule  Vuln ID: V-46569
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyRunActiveXControls_3">Allows users to download signed ActiveX controls for the internal network</string>
+      <string id="ns1_IZ_PolicyRunActiveXControls_7">Rule Title:  ActiveX controls and plug-ins must be disallowed (Restricted Sites zone).
+STIG ID: DTBI115-IE11  Rule ID: SV-59443r1_rule  Vuln ID: V-46579
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyScriptActiveXMarkedSafe_7">Rule Title:  ActiveX controls marked safe for scripting must be disallowed (Restricted Sites zone).
+STIG ID: DTBI116-IE11  Rule ID: SV-59445r1_rule  Vuln ID: V-46581
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyScriptActiveXNotMarkedSafe_1">Rule Title:  The Initialize and script ActiveX controls not marked as safe property must be disallowed (Internet zone).
+STIG ID: DTBI024-IE11  Rule ID: SV-59365r1_rule  Vuln ID: V-46501
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyScriptActiveXNotMarkedSafe_7">Rule Title:  The Initialize and script ActiveX controls not marked as safe property must be disallowed (Restricted Sites zone).
+STIG ID: DTBI114-IE11  Rule ID: SV-59441r1_rule  Vuln ID: V-46577
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyScriptingOfJavaApplets_7">Rule Title:  Scripting of Java applets must be disallowed (Restricted Sites zone).
+STIG ID: DTBI670-IE11  Rule ID: SV-59667r1_rule  Vuln ID: V-46801
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicySignedFrameworkComponentsURLaction_1">Rule Title:  .NET Framework-reliant components signed with Authenticode must be disallowed to run (Internet zone).
+STIG ID: DTBI930-IE11  Rule ID: SV-59787r1_rule  Vuln ID: V-46921
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicySignedFrameworkComponentsURLaction_7">Rule Title:  .NET Framework-reliant components signed with Authenticode must be disallowed to run (Restricted Sites Zone).
+STIG ID: DTBI655-IE11  Rule ID: SV-59665r1_rule  Vuln ID: V-46799
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyTurnOnXSSFilter_Both_Internet">Rule Title:  Cross-Site Scripting Filter must be enforced (Internet zone).
+STIG ID: DTBI840-IE11  Rule ID: SV-59745r1_rule  Vuln ID: V-46879
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyTurnOnXSSFilter_Both_Restricted">Rule Title:  Cross-Site Scripting Filter property must be enforced (Restricted Sites zone).
+STIG ID: DTBI890-IE11  Rule ID: SV-59761r1_rule  Vuln ID: V-46895
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyUnsignedFrameworkComponentsURLaction_1">Rule Title:  .NET Framework-reliant components not signed with Authenticode must be disallowed to run (Internet zone).
+STIG ID: DTBI920-IE11  Rule ID: SV-59773r1_rule  Vuln ID: V-46907
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyUnsignedFrameworkComponentsURLaction_7">Rule Title:  .NET Framework-reliant components not signed with Authenticode must be disallowed to run (Restricted Sites Zone).
+STIG ID: DTBI650-IE11  Rule ID: SV-59663r1_rule  Vuln ID: V-46797
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyUserdataPersistence_1">Rule Title:  Userdata persistence must be disallowed (Internet zone).
+STIG ID: DTBI042-IE11  Rule ID: SV-59381r1_rule  Vuln ID: V-46517
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyUserdataPersistence_7">Rule Title:  Userdata persistence must be disallowed (Restricted Sites zone).
+STIG ID: DTBI132-IE11  Rule ID: SV-59465r1_rule  Vuln ID: V-46601
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyWarnCertMismatch">Rule Title:  The Internet Explorer warning about certificate address mismatch must be enforced.
+STIG ID: DTBI015-IE11  Rule ID: SV-59339r1_rule  Vuln ID: V-46475
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyWindowsRestrictionsURLaction_1">Rule Title:  Script-initiated windows without size or position constraints must be disallowed (Internet zone).
+STIG ID: DTBI385-IE11  Rule ID: SV-59501r1_rule  Vuln ID: V-46637
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyWindowsRestrictionsURLaction_7">Rule Title:  Script-initiated windows without size or position constraints must be disallowed (Restricted Sites zone).
+STIG ID: DTBI390-IE11  Rule ID: SV-59503r1_rule  Vuln ID: V-46639
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyZoneElevationURLaction_1">Rule Title:  Websites in less privileged web content zones must be prevented from navigating into the Internet zone.
+STIG ID: DTBI515-IE11  Rule ID: SV-59557r1_rule  Vuln ID: V-46693
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_PolicyZoneElevationURLaction_7">Rule Title:  Websites in less privileged web content zones must be prevented from navigating into the Restricted Sites zone.
+STIG ID: DTBI520-IE11  Rule ID: SV-59559r1_rule  Vuln ID: V-46695
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_AllowScriptlets_1">Rule Title:  Scriptlets must be disallowed (Internet zone).
+STIG ID: DTBI395-IE11  Rule ID: SV-59505r1_rule  Vuln ID: V-46641
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_AllowScriptlets_7">Rule Title:  Scriptlets must be disallowed (Restricted Sites zone).
+STIG ID: DTBI940-IE11  Rule ID: SV-59793r1_rule  Vuln ID: V-46927
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_FirstRunOptIn_1">Rule Title:  First-Run prompt ability must be disallowed (Internet zone).
+STIG ID: DTBI475-IE11  Rule ID: SV-59541r1_rule  Vuln ID: V-46677
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_FirstRunOptIn_7">Rule Title:  First-Run prompt ability must be disallowed (Restricted Sites zone).
+STIG ID: DTBI480-IE11  Rule ID: SV-59543r1_rule  Vuln ID: V-46679
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_LocalPathForUpload_1">Rule Title:  When uploading files to a server, the local directory path must be excluded (Internet zone).
+STIG ID: DTBI810-IE11  Rule ID: SV-59719r1_rule  Vuln ID: V-46853
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_LocalPathForUpload_7">Rule Title:  When uploading files to a server, the local directory path must be excluded (Restricted Sites zone).
+STIG ID: DTBI860-IE11  Rule ID: SV-59751r1_rule  Vuln ID: V-46885
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_ScriptStatusBar_1">Rule Title:  Status bar updates via script must be disallowed (Internet zone).
+STIG ID: DTBI910-IE11  Rule ID: SV-59769r1_rule  Vuln ID: V-46903
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_ScriptStatusBar_7">Rule Title:  Status bar updates via script must be disallowed (Restricted Sites zone).
+STIG ID: DTBI950-IE11  Rule ID: SV-59805r1_rule  Vuln ID: V-46939
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_TurnOnProtectedMode_1">Rule Title:  Protected Mode must be enforced (Internet zone).
+STIG ID: DTBI485-IE11  Rule ID: SV-59545r1_rule  Vuln ID: V-46681
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_TurnOnProtectedMode_7">Rule Title:  Protected Mode must be enforced (Restricted Sites zone).
+STIG ID: DTBI490-IE11  Rule ID: SV-59549r1_rule  Vuln ID: V-46685
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_UnsafeFiles_1">Rule Title:  Security Warning for unsafe files must be set to prompt (Internet zone).
+STIG ID: DTBI820-IE11  Rule ID: SV-59725r1_rule  Vuln ID: V-46859
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_UnsafeFiles_7">Rule Title:  Security Warning for unsafe files must be disallowed (Restricted Sites zone).
+STIG ID: DTBI870-IE11  Rule ID: SV-59755r1_rule  Vuln ID: V-46889
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_WebBrowserControl_1">Rule Title:  Scripting of Internet Explorer WebBrowser control property must be disallowed (Internet zone).
+STIG ID: DTBI800-IE11  Rule ID: SV-59715r1_rule  Vuln ID: V-46849
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_WebBrowserControl_7">Rule Title:  Scripting of Internet Explorer WebBrowser Control must be disallowed (Restricted Sites zone).
+STIG ID: DTBI850-IE11  Rule ID: SV-59749r1_rule  Vuln ID: V-46883
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_XAML_1">Rule Title:  XAML files must be disallowed (Internet zone).
+STIG ID: DTBI455-IE11  Rule ID: SV-59529r1_rule  Vuln ID: V-46665
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_Policy_XAML_7">Rule Title:  XAML files must be disallowed (Restricted Sites zone).
+STIG ID: DTBI460-IE11  Rule ID: SV-59533r1_rule  Vuln ID: V-46669
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_IZ_UNCAsIntranet">Rule Title:  All network paths (UNCs) for Intranet sites must be disallowed.
+STIG ID: DTBI375-IE11  Rule ID: SV-59499r1_rule  Vuln ID: V-46635
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_NoFirstRunCustomise">Rule Title:  First Run Wizard settings must be established for a home page.
+STIG ID: DTBI010-IE11  Rule ID: SV-59335r1_rule  Vuln ID: V-46471
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_RestrictAutoconfig">Rule Title:  Automatic configuration of Internet Explorer connections must be disallowed.
+STIG ID: DTBI305-IE11  Rule ID: SV-59475r1_rule  Vuln ID: V-46611
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_RestrictDomainSuggestion">Rule Title:  URL Suggestions must be disallowed.
+STIG ID: DTBI1030-IE11  Rule ID: SV-59421r1_rule  Vuln ID: V-46557
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_RestrictHistory">Rule Title:  Configuring History setting must be set to 40 days.
+STIG ID: DTBI300-IE11  Rule ID: SV-59473r1_rule  Vuln ID: V-46609
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_SQM_DisableCEIP">Rule Title:  Participation in the Customer Experience Improvement Program must be disallowed.
+STIG ID: DTBI315-IE11  Rule ID: SV-59477r1_rule  Vuln ID: V-46613
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_Security_HKLM_only">Rule Title:  Internet Explorer must be configured to use machine settings.
+STIG ID: DTBI320-IE11  Rule ID: SV-59483r1_rule  Vuln ID: V-46619
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_Security_options_edit">Rule Title:  Internet Explorer must be configured to disallow users to change policies.
+STIG ID: DTBI319-IE11  Rule ID: SV-59481r1_rule  Vuln ID: V-46617
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_Security_zones_map_edit">Rule Title:  Internet Explorer must be set to disallow users to add/delete sites.
+STIG ID: DTBI318-IE11  Rule ID: SV-59479r1_rule  Vuln ID: V-46615
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_TurnOffAccelerators">Rule Title:  Internet Explorer accelerator functionality must be disallowed.
+STIG ID: DTBI1055-IE11  Rule ID: SV-59435r1_rule  Vuln ID: V-46571
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_TurnOnActiveXFiltering">Turns off Active X filtering in IE so silverlight can run</string>
+      <string id="ns1_UpdateIntervalPol">Rule Title:  The update check interval must be configured and set to 30 days.
+STIG ID: DTBI680-IE11  Rule ID: SV-59671r1_rule  Vuln ID: V-46805
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_UpdatePagePol">Rule Title:  The URL to be displayed for checking updates to Internet Explorer and Internet Tools must be blank or empty.
+STIG ID: DTBI675-IE11  Rule ID: SV-59669r1_rule  Vuln ID: V-46803
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_UserProxy">Rule Title:  Internet Explorer must be configured to make proxy settings per user.
+STIG ID: DTBI367-IE11  Rule ID: SV-59495r1_rule  Vuln ID: V-46631
+Severity: CAT III Class: Unclass</string>
+      <string id="ns2_L_InfoPathAPTCAAssemblyAllowableListEnforcement">Rule Title: The InfoPath APTCA Assembly Allowable List must be enforced.
+STIG ID: DTOO309 Rule ID: SV-53452r1_rule Vuln ID: V-26697
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_AddonManagement">Rule Title: Add-on Management functionality must be allowed.
+STIG ID: DTOO126 Rule ID: SV-52765r1_rule Vuln ID: V-26584
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_Bindtoobject">Rule Title: Enabling IE Bind to Object functionality must be present.
+STIG ID: DTOO111 Rule ID: SV-52761r1_rule Vuln ID: V-17174
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_Blockpopups">Rule Title: Links that invoke instances of Internet Explorer from within an Office product must be blocked.
+STIG ID: DTOO129 Rule ID: SV-52767r1_rule Vuln ID: V-17184
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_Disableusernameandpassword">Rule Title: Disabling of user name and password syntax from being used in URLs must be enforced.
+STIG ID: DTOO104 Rule ID: SV-52759r1_rule Vuln ID: V-17173
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_EnableAutomaticUpdates">Rule Title: Office automatic updates must be enabled for Office products installed via Click-to-Run and configured to use a Trusted site.
+STIG ID: DTOO401 Rule ID: SV-53190r1_rule Vuln ID: V-40858
+Severity: CAT II Class: Unclass
+This setting is turned off because Lumension will be patching</string>
+      <string id="ns3_L_HideEnableDisableUpdates">Rule Title: The Enable Updates and Disable Updates options in the UI must be hidden from users.
+STIG ID: DTOO402 Rule ID: SV-53191r1_rule Vuln ID: V-40859
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_NavigateURL">Rule Title: Navigation to URLs embedded in Office products must be blocked.
+STIG ID: DTOO123 Rule ID: SV-52763r1_rule Vuln ID: V-17183
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_ProtectionFromZoneElevation">Rule Title: Protection from zone elevation must be enforced.
+STIG ID: DTOO209 Rule ID: SV-52774r1_rule Vuln ID: V-26585
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_RestrictActiveXInstall">Rule Title: ActiveX Installs must be configured for proper restriction.
+STIG ID: DTOO211 Rule ID: SV-52775r1_rule Vuln ID: V-26586
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_RestrictFileDownload">Rule Title: File Downloads must be configured for proper restrictions.
+STIG ID: DTOO132 Rule ID: SV-52770r1_rule Vuln ID: V-26587
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_SavedfromURL">Rule Title: Saved from URL mark to assure Internet zone processing must be enforced.
+STIG ID: DTOO117 Rule ID: SV-52762r1_rule Vuln ID: V-17175
+Severity: CAT II Class: Unclass</string>
+      <string id="ns3_L_ScriptedWindowSecurityRestrictions">Rule Title: Scripted Window Security must be enforced.
+STIG ID: DTOO124 Rule ID: SV-52764r1_rule Vuln ID: V-26588
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_EnableAutomaticUpdates">Rule Title: Office automatic updates must be enabled for Office products installed via Click-to-Run and configured to use a Trusted site.
+STIG ID: DTOO401 Rule ID: SV-53190r1_rule Vuln ID: V-40858
+Severity: CAT II Class: Unclass
+This setting is turned off because Lumension will be patching</string>
+      <string id="ns4_L_HideEnableDisableUpdates">Rule Title: The Enable Updates and Disable Updates options in the UI must be hidden from users.
+STIG ID: DTOO402 Rule ID: SV-53191r1_rule Vuln ID: V-40859
+Severity: CAT II Class: Unclass</string>
+    </stringTable>
+  </resources>
+</policyComments>
