@@ -9,7 +9,7 @@ There are a total of four client GPOs, two computer, and two user based objects.
 %SystemRoot%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
 %SystemRoot%\Microsoft.NET\Framework64\v2.0.50727\MSBuild.exe
 %SystemRoot%\Microsoft.NET\Framework64\v3.5\MSBuild.exe
-%SystemRoot%\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe
+%SystemRoot%\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe</br>
 %SystemRoot%\System32\at.exe
 %SystemRoot%\System32\cscript.exe
 %SystemRoot%\System32\find.exe
