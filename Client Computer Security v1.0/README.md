@@ -44,7 +44,7 @@ Computer Configuration > Polices > Windows Settings > Security Settings > Local 
 
 1. There are three entries for each of the event logs that need to be secured.  Open each entry and add the domain group ACL_Workstation_LocalAdmins with full control.
 ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/eventlogpermissions.png "eventlogpermissions")
-2. Removing user permissions from administrative binaries.  Look in the included .html file for a complete list.
+2. Removing user permissions from administrative binaries.  Look in the included .htm file for a complete list.
 
 #Windows Firewall
 
@@ -62,6 +62,7 @@ Computer Configuration > Polices > Windows Settings > Security Settings > Networ
 #Local Account Password Solution (LAPS)
 
 LAPS is a Microsoft solution to manage the password of the local administrator account.  This protects systems by setting a different randomized password on the clients.  It then stores the password in the Active Directory computer object.  Download the LAPS solution from Microsoft here.  If LAPS is not configured the GPO will have no affect on the systems, except to generate errors in the event logs.
+1. LAPS can be download from here: https://www.microsoft.com/en-us/download/details.aspx?id=46899
 
 #NOTE: IN ORDER TO CONFIGURE THE LAPS SETTINGS, IT IS ASSUMED THE SOLUTION HAS BEEN DEPLOYED ALREADY.
 
@@ -96,4 +97,4 @@ Computer Configuration > Preferences > Control Panel Settings > Local Users and 
 7. Offer Remote Assistance Helpers – Modify this group and change the place holder group with the Domain Local group created earlier in this paper.  If your company does not use Remote Assistance, remove the GPO entry.
 
 
-#NOTE:  THE BEST PRACTICE IS TO ADD STANDARD DOMAIN USER ACCOUNTS TO ALLOW RDP ACCESS AND THEN FORCE THEM TO PERFORM A RUN AS TO PERFORM ADMINISTRATIVE TASKS.  SINCE THE LOGON CACHE IS SET TO 0, THIS HELPS MITIGATE THE RISK OF LEAVING ADMINISTRATIVE CACHED CREDENTIALS ON THE CLIENTS. 
+#NOTE:  THE BEST PRACTICE IS TO ADD STANDARD DOMAIN USER ACCOUNTS TO ALLOW RDP ACCESS AND THEN FORCE THEM TO PERFORM A RUN AS TO PERFORM ADMINISTRATIVE TASKS.  SINCE THE LOGON CACHE IS SET TO 0, THIS HELPS MITIGATE THE RISK OF LEAVING ADMINISTRATIVE CACHED CREDENTIALS ON THE CLIENTS.
