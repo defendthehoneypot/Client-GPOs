@@ -1,7 +1,7 @@
 # Client GPOs
 Refer to my site for more explanation on each GPO.  www.defendthehoneypot.com
 There are a total of four client GPOs, two computer, and two user based objects.  They all must be applied together to garner the complete benefit.  There are several specific security goals the GPOs are designed to achieve.  There are probably over 1000 different settings between all four of the GPOs.  This document will only cover the ones that require adjustments to provide functionality with your environment.  The reason behind breaking the GPOs into four separate policies is to allow changes to OS or application specific settings and not requiring the clients to complete refresh the entire policies, essentially make the GPOs more efficient or lightweight.  If one desires, the GPOs could be combined into two polices, one computer and one user.  There are many debates on this issue but I have found that separating them based on how often they are updated is a good practice.  Use the .htm files I have included with each GPO and scan for place holders like http://companyname.com and replace with your internal web server name.
-
+![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/administrators.png "Logo Title Text 1")
 2016-12-27 - Added outbound firewall rules to block powershell.exe and regsvr32.exe
 Added the following binaries
 %SystemRoot%\SysWOW64\schtasks.exe</br>
