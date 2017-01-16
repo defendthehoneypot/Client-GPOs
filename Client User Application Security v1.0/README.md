@@ -1,0 +1,3 @@
+#<p align="center">Client User Application Security Group Policy</p>
+
+This Group Policy contains all the settings for Microsoft Office, Internet Explorer and Chrome.  While it does have settings for Office 2010/2013, the settings for 2016 are the most complete.  For the purposes of this documentation, only Office 2016 settings are covered.  Macros have been disabled with notification.  If you need trusted sites set them in the Microsoft Office 2016 setting
