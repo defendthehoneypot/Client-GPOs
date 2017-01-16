@@ -1,4 +1,4 @@
-<align="center">#Introduction
+<align="center">#Introduction</align>
 
 
     The goal of this document is to help implement the DoD/NIST security settings for Windows clients on a non-DoD network.  While many people become concerned with the use of DoD security settings, they are in fact the same controls from the NIST site but in an easy to follow checklist.  Along with this paper are the Group Policy Object (GPO) Backups that can be imported, with some minor changes, and implemented in almost any organization.  The GPOs have been built using the Defense Information Systems Agency site.  (DISA).  The reason for using the DISA site is the STIG Viewer and benchmarks.  These provide an easy to use tool for viewing and documenting the DoD/NIST settings.  The STIG viewer is a simple jar file that can be downloaded from the DISA IASE SITE.  Using this tool one can import the specific catalog of settings for a wide range of systems, applications and other products.
