@@ -1,4 +1,4 @@
-##<p align="center">Client Computer Application Security Group Policy</p>
+#<p align="center">Client Computer Application Security Group Policy</p>
 
 The GPO covers the computer based settings for Internet Explorer, Microsoft Office, Adobe and Java.  The Settings for IE are restrictive and any external sites needed for business use will need to be added to the Trusted Sites.  This in no way means that users will have a poor Internet surfing experience, but it is designed to cut down on malicious scripts.  It also has the basic security settings for the current version of Adobe Reader DC and Adobe Professional DC.  The Java settings keep it from auto updating so the user is not prompted.
 
