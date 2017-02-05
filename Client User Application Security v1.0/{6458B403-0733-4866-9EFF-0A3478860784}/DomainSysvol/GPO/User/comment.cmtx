@@ -1,0 +1,970 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Microsoft.Policies.InternetExplorer"></using>
+    <using prefix="ns1" namespace="access15.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns2" namespace="access16.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns3" namespace="excel15.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns4" namespace="excel16.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns5" namespace="inf15.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns6" namespace="office15.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns7" namespace="office16.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns8" namespace="outlk14.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns9" namespace="outlk15.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns10" namespace="outlk16.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns11" namespace="ppt16.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns12" namespace="pub15.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns13" namespace="pub16.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns14" namespace="visio16.Office.Microsoft.Policies.Windows"></using>
+    <using prefix="ns15" namespace="word16.Office.Microsoft.Policies.Windows"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns0:PopupBlocker_AllowList" commentText="$(resource.ns0_PopupBlocker_AllowList)"></comment>
+      <comment policyRef="ns0:RestrictFormSuggest" commentText="$(resource.ns0_RestrictFormSuggest)"></comment>
+      <comment policyRef="ns0:RestrictFormSuggestPW" commentText="$(resource.ns0_RestrictFormSuggestPW)"></comment>
+      <comment policyRef="ns0:RestrictHomePage" commentText="$(resource.ns0_RestrictHomePage)"></comment>
+      <comment policyRef="ns1:L_ModalTrustDecisionOnly" commentText="$(resource.ns1_L_ModalTrustDecisionOnly)"></comment>
+      <comment policyRef="ns2:L_Donotprompttoconvertolderdatabases" commentText="$(resource.ns2_L_Donotprompttoconvertolderdatabases)"></comment>
+      <comment policyRef="ns2:L_ModalTrustDecisionOnly" commentText="$(resource.ns2_L_ModalTrustDecisionOnly)"></comment>
+      <comment policyRef="ns2:L_VBAWarningsPolicy" commentText="$(resource.ns2_L_VBAWarningsPolicy)"></comment>
+      <comment policyRef="ns4:L_AllowTrustedLocationsOnTheNetwork" commentText="$(resource.ns4_L_AllowTrustedLocationsOnTheNetwork)"></comment>
+      <comment policyRef="ns4:L_Asktoupdateautomaticlinks" commentText="$(resource.ns4_L_Asktoupdateautomaticlinks)"></comment>
+      <comment policyRef="ns4:L_DBaseIIIANDIVFiles" commentText="$(resource.ns4_L_DBaseIIIANDIVFiles)"></comment>
+      <comment policyRef="ns4:L_DeterminewhethertoforceencryptedExcel" commentText="$(resource.ns4_L_DeterminewhethertoforceencryptedExcel)"></comment>
+      <comment policyRef="ns4:L_DifAndSylkFiles" commentText="$(resource.ns4_L_DifAndSylkFiles)"></comment>
+      <comment policyRef="ns4:L_DisableAutoRepublish" commentText="$(resource.ns4_L_DisableAutoRepublish)"></comment>
+      <comment policyRef="ns4:L_DisableTrustBarNotificationforunsigned" commentText="$(resource.ns4_L_DisableTrustBarNotificationforunsigned)"></comment>
+      <comment policyRef="ns4:L_DisableTrustedLoc" commentText="$(resource.ns4_L_DisableTrustedLoc)"></comment>
+      <comment policyRef="ns4:L_DoNotOpenFilesFromTheInternetZoneInProtectedView" commentText="$(resource.ns4_L_DoNotOpenFilesFromTheInternetZoneInProtectedView)"></comment>
+      <comment policyRef="ns4:L_DoNotShowAutoRepublishWarningAlert" commentText="$(resource.ns4_L_DoNotShowAutoRepublishWarningAlert)"></comment>
+      <comment policyRef="ns4:L_Donotshowdataextractionoptionswhenopeningcorruptworkbooks" commentText="$(resource.ns4_L_Donotshowdataextractionoptionswhenopeningcorruptworkbooks)"></comment>
+      <comment policyRef="ns4:L_Excel2MacrosheetsAndAddInFiles" commentText="$(resource.ns4_L_Excel2MacrosheetsAndAddInFiles)"></comment>
+      <comment policyRef="ns4:L_Excel2Worksheets" commentText="$(resource.ns4_L_Excel2Worksheets)"></comment>
+      <comment policyRef="ns4:L_Excel3Worksheets" commentText="$(resource.ns4_L_Excel3Worksheets)"></comment>
+      <comment policyRef="ns4:L_Excel4MacrosheetsAndAddInFiles" commentText="$(resource.ns4_L_Excel4MacrosheetsAndAddInFiles)"></comment>
+      <comment policyRef="ns4:L_Excel4Workbooks" commentText="$(resource.ns4_L_Excel4Workbooks)"></comment>
+      <comment policyRef="ns4:L_Excel4Worksheets" commentText="$(resource.ns4_L_Excel4Worksheets)"></comment>
+      <comment policyRef="ns4:L_Excel9597WorkbooksAndTemplates" commentText="$(resource.ns4_L_Excel9597WorkbooksAndTemplates)"></comment>
+      <comment policyRef="ns4:L_Excel95Workbooks" commentText="$(resource.ns4_L_Excel95Workbooks)"></comment>
+      <comment policyRef="ns4:L_Forcefileextenstionstomatch" commentText="$(resource.ns4_L_Forcefileextenstionstomatch)"></comment>
+      <comment policyRef="ns4:L_Internetandnetworkpathsashyperlinks" commentText="$(resource.ns4_L_Internetandnetworkpathsashyperlinks)"></comment>
+      <comment policyRef="ns4:L_LoadpicturesfromWebpagesnotcreatedinExcel" commentText="$(resource.ns4_L_LoadpicturesfromWebpagesnotcreatedinExcel)"></comment>
+      <comment policyRef="ns4:L_RequirethatApplicationExtensionsaresigned" commentText="$(resource.ns4_L_RequirethatApplicationExtensionsaresigned)"></comment>
+      <comment policyRef="ns4:L_SaveExcelfilesas" commentText="$(resource.ns4_L_SaveExcelfilesas)"></comment>
+      <comment policyRef="ns4:L_SetDefaultFileBlockBehavior" commentText="$(resource.ns4_L_SetDefaultFileBlockBehavior)"></comment>
+      <comment policyRef="ns4:L_SetDocumentBehaviorIfFileValidationFails" commentText="$(resource.ns4_L_SetDocumentBehaviorIfFileValidationFails)"></comment>
+      <comment policyRef="ns4:L_StoremacroinPersonalMacroWorkbookbydefault" commentText="$(resource.ns4_L_StoremacroinPersonalMacroWorkbookbydefault)"></comment>
+      <comment policyRef="ns4:L_TrustaccesstoVisualBasicProject" commentText="$(resource.ns4_L_TrustaccesstoVisualBasicProject)"></comment>
+      <comment policyRef="ns4:L_TurnOffFileValidation" commentText="$(resource.ns4_L_TurnOffFileValidation)"></comment>
+      <comment policyRef="ns4:L_TurnOffProtectedViewForAttachmentsOpenedFromOutlook" commentText="$(resource.ns4_L_TurnOffProtectedViewForAttachmentsOpenedFromOutlook)"></comment>
+      <comment policyRef="ns4:L_VBAWarningsPolicy" commentText="$(resource.ns4_L_VBAWarningsPolicy)"></comment>
+      <comment policyRef="ns4:L_WebContentWarningLevel" commentText="$(resource.ns4_L_WebContentWarningLevel)"></comment>
+      <comment policyRef="ns4:L_WebPagesAndExcel2003XMLSpreadsheets" commentText="$(resource.ns4_L_WebPagesAndExcel2003XMLSpreadsheets)"></comment>
+      <comment policyRef="ns5:L_ActiveXBeaconingUIPolicy" commentText="$(resource.ns5_L_ActiveXBeaconingUIPolicy)"></comment>
+      <comment policyRef="ns5:L_BeaconingUIPolicy" commentText="$(resource.ns5_L_BeaconingUIPolicy)"></comment>
+      <comment policyRef="ns5:L_ControlBehaviorforWindowsSharePointServerGradualUpgrade" commentText="$(resource.ns5_L_ControlBehaviorforWindowsSharePointServerGradualUpgrade)"></comment>
+      <comment policyRef="ns5:L_ControlbehaviorwhenopeningInfoPathemailformsconta" commentText="$(resource.ns5_L_ControlbehaviorwhenopeningInfoPathemailformsconta)"></comment>
+      <comment policyRef="ns5:L_DisableCacheXSNPolicy" commentText="$(resource.ns5_L_DisableCacheXSNPolicy)"></comment>
+      <comment policyRef="ns5:L_DisableEmailFormsPolicy" commentText="$(resource.ns5_L_DisableEmailFormsPolicy)"></comment>
+      <comment policyRef="ns5:L_DisableFullTrustEmailFormsPolicy" commentText="$(resource.ns5_L_DisableFullTrustEmailFormsPolicy)"></comment>
+      <comment policyRef="ns5:L_DisableInternetEmailFormsPolicy" commentText="$(resource.ns5_L_DisableInternetEmailFormsPolicy)"></comment>
+      <comment policyRef="ns5:L_DisableIntranetEmailFormsPolicy" commentText="$(resource.ns5_L_DisableIntranetEmailFormsPolicy)"></comment>
+      <comment policyRef="ns5:L_DisableOutlookEmailFormsPolicy" commentText="$(resource.ns5_L_DisableOutlookEmailFormsPolicy)"></comment>
+      <comment policyRef="ns5:L_DisableTrustBarNotificationforunsigned" commentText="$(resource.ns5_L_DisableTrustBarNotificationforunsigned)"></comment>
+      <comment policyRef="ns5:L_DisableTrustedLoc" commentText="$(resource.ns5_L_DisableTrustedLoc)"></comment>
+      <comment policyRef="ns5:L_Disablefullytrustedsolutionsfullaccesstomachine" commentText="$(resource.ns5_L_Disablefullytrustedsolutionsfullaccesstomachine)"></comment>
+      <comment policyRef="ns5:L_DisableopeningofsolutionsfromtheInternetsecurityzone" commentText="$(resource.ns5_L_DisableopeningofsolutionsfromtheInternetsecurityzone)"></comment>
+      <comment policyRef="ns5:L_Displayawarningthataformisdigitallysigned" commentText="$(resource.ns5_L_Displayawarningthataformisdigitallysigned)"></comment>
+      <comment policyRef="ns5:L_EmailFormsBeaconingUI" commentText="$(resource.ns5_L_EmailFormsBeaconingUI)"></comment>
+      <comment policyRef="ns5:L_FormTemplatePolicy" commentText="$(resource.ns5_L_FormTemplatePolicy)"></comment>
+      <comment policyRef="ns5:L_OfflineModestatus" commentText="$(resource.ns5_L_OfflineModestatus)"></comment>
+      <comment policyRef="ns5:L_Preventusersfromallowingunsafefiletypestobeattachedtoforms" commentText="$(resource.ns5_L_Preventusersfromallowingunsafefiletypestobeattachedtoforms)"></comment>
+      <comment policyRef="ns5:L_RequirethatApplicationExtensionsaresigned" commentText="$(resource.ns5_L_RequirethatApplicationExtensionsaresigned)"></comment>
+      <comment policyRef="ns5:L_RestrictedEmailFormsPolicy" commentText="$(resource.ns5_L_RestrictedEmailFormsPolicy)"></comment>
+      <comment policyRef="ns5:L_RunManagedCodeFromInternet" commentText="$(resource.ns5_L_RunManagedCodeFromInternet)"></comment>
+      <comment policyRef="ns7:L_ActiveXControlInitialization" commentText="$(resource.ns7_L_ActiveXControlInitialization)"></comment>
+      <comment policyRef="ns7:L_AllowPNGasanoutputformat" commentText="$(resource.ns7_L_AllowPNGasanoutputformat)"></comment>
+      <comment policyRef="ns7:L_AllowUnsecureApps" commentText="$(resource.ns7_L_AllowUnsecureApps)"></comment>
+      <comment policyRef="ns7:L_Allowmixofpolicyanduserlocations" commentText="$(resource.ns7_L_Allowmixofpolicyanduserlocations)"></comment>
+      <comment policyRef="ns7:L_AllowuserswithearlierversionsofOfficetoreadwithbrowsers" commentText="$(resource.ns7_L_AllowuserswithearlierversionsofOfficetoreadwithbrowsers)"></comment>
+      <comment policyRef="ns7:L_Alwaysrequireuserstoconnecttoverifypermission" commentText="$(resource.ns7_L_Alwaysrequireuserstoconnecttoverifypermission)"></comment>
+      <comment policyRef="ns7:L_AutomationSecurity" commentText="$(resource.ns7_L_AutomationSecurity)"></comment>
+      <comment policyRef="ns7:L_BlockopeningofprereleaseExcel" commentText="$(resource.ns7_L_BlockopeningofprereleaseExcel)"></comment>
+      <comment policyRef="ns7:L_BlockopeningofprereleasePPT" commentText="$(resource.ns7_L_BlockopeningofprereleasePPT)"></comment>
+      <comment policyRef="ns7:L_ControlBlogging" commentText="$(resource.ns7_L_ControlBlogging)"></comment>
+      <comment policyRef="ns7:L_DisableDefaultService" commentText="$(resource.ns7_L_DisableDefaultService)"></comment>
+      <comment policyRef="ns7:L_DisableFaxOverInternetfeature" commentText="$(resource.ns7_L_DisableFaxOverInternetfeature)"></comment>
+      <comment policyRef="ns7:L_DisableMovie" commentText="$(resource.ns7_L_DisableMovie)"></comment>
+      <comment policyRef="ns7:L_DisableOfficeFirstrun" commentText="$(resource.ns7_L_DisableOfficeFirstrun)"></comment>
+      <comment policyRef="ns7:L_DisableOfficeStore" commentText="$(resource.ns7_L_DisableOfficeStore)"></comment>
+      <comment policyRef="ns7:L_DisableOfficeUserRoamingSettings" commentText="$(resource.ns7_L_DisableOfficeUserRoamingSettings)"></comment>
+      <comment policyRef="ns7:L_DisableOptinWizard" commentText="$(resource.ns7_L_DisableOptinWizard)"></comment>
+      <comment policyRef="ns7:L_DisableProgrammaticAccess" commentText="$(resource.ns7_L_DisableProgrammaticAccess)"></comment>
+      <comment policyRef="ns7:L_DisableScreenshotAutoHyperlink" commentText="$(resource.ns7_L_DisableScreenshotAutoHyperlink)"></comment>
+      <comment policyRef="ns7:L_DisableSmartDocumentsuseofmanifests" commentText="$(resource.ns7_L_DisableSmartDocumentsuseofmanifests)"></comment>
+      <comment policyRef="ns7:L_DisableallTrustBarnotificationsfor" commentText="$(resource.ns7_L_DisableallTrustBarnotificationsfor)"></comment>
+      <comment policyRef="ns7:L_DisableinclusionofdocumentpropertiesinPDFandXPSoutput" commentText="$(resource.ns7_L_DisableinclusionofdocumentpropertiesinPDFandXPSoutput)"></comment>
+      <comment policyRef="ns7:L_DisablepasswordtoopenUI" commentText="$(resource.ns7_L_DisablepasswordtoopenUI)"></comment>
+      <comment policyRef="ns7:L_DisabletheOfficeclientfrompolling" commentText="$(resource.ns7_L_DisabletheOfficeclientfrompolling)"></comment>
+      <comment policyRef="ns7:L_DocumentInformationpanelBeaconingUI" commentText="$(resource.ns7_L_DocumentInformationpanelBeaconingUI)"></comment>
+      <comment policyRef="ns7:L_EnableCustomerExperienceImprovementProgram" commentText="$(resource.ns7_L_EnableCustomerExperienceImprovementProgram)"></comment>
+      <comment policyRef="ns7:L_EnableLogging" commentText="$(resource.ns7_L_EnableLogging)"></comment>
+      <comment policyRef="ns7:L_EncryptDocumentProperties" commentText="$(resource.ns7_L_EncryptDocumentProperties)"></comment>
+      <comment policyRef="ns7:L_Encryptiontypeforpasswordprotectedoffice972003" commentText="$(resource.ns7_L_Encryptiontypeforpasswordprotectedoffice972003)"></comment>
+      <comment policyRef="ns7:L_Encryptiontypeforpasswordprotectedofficeopen" commentText="$(resource.ns7_L_Encryptiontypeforpasswordprotectedofficeopen)"></comment>
+      <comment policyRef="ns7:L_ImproveProofingTools" commentText="$(resource.ns7_L_ImproveProofingTools)"></comment>
+      <comment policyRef="ns7:L_Legacyformatsignatires" commentText="$(resource.ns7_L_Legacyformatsignatires)"></comment>
+      <comment policyRef="ns7:L_LoadControlsinForms3" commentText="$(resource.ns7_L_LoadControlsinForms3)"></comment>
+      <comment policyRef="ns7:L_NoExtensibilityCustomizationFromDocumentPolicy" commentText="$(resource.ns7_L_NoExtensibilityCustomizationFromDocumentPolicy)"></comment>
+      <comment policyRef="ns7:L_OfficeInventoryAgentFilemetadataObfuscation" commentText="$(resource.ns7_L_OfficeInventoryAgentFilemetadataObfuscation)"></comment>
+      <comment policyRef="ns7:L_OfficeInventoryAgentUpload" commentText="$(resource.ns7_L_OfficeInventoryAgentUpload)"></comment>
+      <comment policyRef="ns7:L_Onlinecontentoptions" commentText="$(resource.ns7_L_Onlinecontentoptions)"></comment>
+      <comment policyRef="ns7:L_OpenOfficedocumentsasreadwritewhilebrowsing" commentText="$(resource.ns7_L_OpenOfficedocumentsasreadwritewhilebrowsing)"></comment>
+      <comment policyRef="ns7:L_Preventusersfromchangingpermissions" commentText="$(resource.ns7_L_Preventusersfromchangingpermissions)"></comment>
+      <comment policyRef="ns7:L_Protectdocumentmetadataforpasswordprotected" commentText="$(resource.ns7_L_Protectdocumentmetadataforpasswordprotected)"></comment>
+      <comment policyRef="ns7:L_Protectdocumentmetadataforrightsmanaged" commentText="$(resource.ns7_L_Protectdocumentmetadataforrightsmanaged)"></comment>
+      <comment policyRef="ns7:L_RelyonVMLfordisplayinggraphicsinbrowsers" commentText="$(resource.ns7_L_RelyonVMLfordisplayinggraphicsinbrowsers)"></comment>
+      <comment policyRef="ns7:L_Screenshot" commentText="$(resource.ns7_L_Screenshot)"></comment>
+      <comment policyRef="ns7:L_SendFeedback" commentText="$(resource.ns7_L_SendFeedback)"></comment>
+      <comment policyRef="ns7:L_ShowSkyDriveSignIn" commentText="$(resource.ns7_L_ShowSkyDriveSignIn)"></comment>
+      <comment policyRef="ns7:L_SignInOptions" commentText="$(resource.ns7_L_SignInOptions)"></comment>
+      <comment policyRef="ns7:L_Suppresshyperlinkwarnings" commentText="$(resource.ns7_L_Suppresshyperlinkwarnings)"></comment>
+      <comment policyRef="ns7:L_Supressexternalsigningservicesmenuitems" commentText="$(resource.ns7_L_Supressexternalsigningservicesmenuitems)"></comment>
+      <comment policyRef="ns7:L_TrustedLoc01" commentText="$(resource.ns7_L_TrustedLoc01)"></comment>
+      <comment policyRef="ns7:L_UpdateReliabilityPolicy" commentText="$(resource.ns7_L_UpdateReliabilityPolicy)"></comment>
+      <comment policyRef="ns10:L_Accesstopublishedcalendars" commentText="$(resource.ns10_L_Accesstopublishedcalendars)"></comment>
+      <comment policyRef="ns10:L_AddpeopleIemailtotheSafeSendersList" commentText="$(resource.ns10_L_AddpeopleIemailtotheSafeSendersList)"></comment>
+      <comment policyRef="ns10:L_AllowActiveXOneOffForms" commentText="$(resource.ns10_L_AllowActiveXOneOffForms)"></comment>
+      <comment policyRef="ns10:L_AllowUsersToLowerAttachments" commentText="$(resource.ns10_L_AllowUsersToLowerAttachments)"></comment>
+      <comment policyRef="ns10:L_AttachmentSecureTemporaryFolder" commentText="$(resource.ns10_L_AttachmentSecureTemporaryFolder)"></comment>
+      <comment policyRef="ns10:L_AuthenticationwithExchangeServer" commentText="$(resource.ns10_L_AuthenticationwithExchangeServer)"></comment>
+      <comment policyRef="ns10:L_Automaticallydownloadenclosures" commentText="$(resource.ns10_L_Automaticallydownloadenclosures)"></comment>
+      <comment policyRef="ns10:L_AutomaticallydownloadenclosuresWebCal" commentText="$(resource.ns10_L_AutomaticallydownloadenclosuresWebCal)"></comment>
+      <comment policyRef="ns10:L_BlockInternet" commentText="$(resource.ns10_L_BlockInternet)"></comment>
+      <comment policyRef="ns10:L_BlockIntranet" commentText="$(resource.ns10_L_BlockIntranet)"></comment>
+      <comment policyRef="ns10:L_BlockTrustedZones" commentText="$(resource.ns10_L_BlockTrustedZones)"></comment>
+      <comment policyRef="ns10:L_Blockexternalcontent" commentText="$(resource.ns10_L_Blockexternalcontent)"></comment>
+      <comment policyRef="ns10:L_ConfigureAddInTrustLevel" commentText="$(resource.ns10_L_ConfigureAddInTrustLevel)"></comment>
+      <comment policyRef="ns10:L_DisableOutlookobjectmodelscripts" commentText="$(resource.ns10_L_DisableOutlookobjectmodelscripts)"></comment>
+      <comment policyRef="ns10:L_DisableOutlookobjectmodelscriptsforpublicfolders" commentText="$(resource.ns10_L_DisableOutlookobjectmodelscriptsforpublicfolders)"></comment>
+      <comment policyRef="ns10:L_DisableRememberPasswordcheckboxforInternetEmailsettingsdialo" commentText="$(resource.ns10_L_DisableRememberPasswordcheckboxforInternetEmailsettingsdialo)"></comment>
+      <comment policyRef="ns10:L_DisableSignatures" commentText="$(resource.ns10_L_DisableSignatures)"></comment>
+      <comment policyRef="ns10:L_DisableWeather" commentText="$(resource.ns10_L_DisableWeather)"></comment>
+      <comment policyRef="ns10:L_DisableWebCalIntegration" commentText="$(resource.ns10_L_DisableWebCalIntegration)"></comment>
+      <comment policyRef="ns10:L_Disablefolderhomepagesforfoldersinnondefaultstores" commentText="$(resource.ns10_L_Disablefolderhomepagesforfoldersinnondefaultstores)"></comment>
+      <comment policyRef="ns10:L_Disableuserentriestoserverlist" commentText="$(resource.ns10_L_Disableuserentriestoserverlist)"></comment>
+      <comment policyRef="ns10:L_Donotcheckemailaddressagainstaddressofcertificatesbeingusing" commentText="$(resource.ns10_L_Donotcheckemailaddressagainstaddressofcertificatesbeingusing)"></comment>
+      <comment policyRef="ns10:L_Downloadfulltextofarticles" commentText="$(resource.ns10_L_Downloadfulltextofarticles)"></comment>
+      <comment policyRef="ns10:L_EnableRPCEncryption" commentText="$(resource.ns10_L_EnableRPCEncryption)"></comment>
+      <comment policyRef="ns10:L_EnableScriptsInOneOffForms" commentText="$(resource.ns10_L_EnableScriptsInOneOffForms)"></comment>
+      <comment policyRef="ns10:L_Enablelinksinemailmessages" commentText="$(resource.ns10_L_Enablelinksinemailmessages)"></comment>
+      <comment policyRef="ns10:L_HideJunkMailUI" commentText="$(resource.ns10_L_HideJunkMailUI)"></comment>
+      <comment policyRef="ns10:L_InternetAndNetworkPathsIntoHyperlinks" commentText="$(resource.ns10_L_InternetAndNetworkPathsIntoHyperlinks)"></comment>
+      <comment policyRef="ns10:L_Level1Attachments" commentText="$(resource.ns10_L_Level1Attachments)"></comment>
+      <comment policyRef="ns10:L_Level1RemoveFilePolicy" commentText="$(resource.ns10_L_Level1RemoveFilePolicy)"></comment>
+      <comment policyRef="ns10:L_Level2RemoveFilePolicy" commentText="$(resource.ns10_L_Level2RemoveFilePolicy)"></comment>
+      <comment policyRef="ns10:L_MSGUnicodeformatwhendraggingtofilesystem" commentText="$(resource.ns10_L_MSGUnicodeformatwhendraggingtofilesystem)"></comment>
+      <comment policyRef="ns10:L_MakeOutlookthedefaultprogramforEmailContactsandCalendar" commentText="$(resource.ns10_L_MakeOutlookthedefaultprogramforEmailContactsandCalendar)"></comment>
+      <comment policyRef="ns10:L_MessageFormats" commentText="$(resource.ns10_L_MessageFormats)"></comment>
+      <comment policyRef="ns10:L_Messageformateditor" commentText="$(resource.ns10_L_Messageformateditor)"></comment>
+      <comment policyRef="ns10:L_Minimumencryptionsettings" commentText="$(resource.ns10_L_Minimumencryptionsettings)"></comment>
+      <comment policyRef="ns10:L_Missingrootcertificates" commentText="$(resource.ns10_L_Missingrootcertificates)"></comment>
+      <comment policyRef="ns10:L_NoPromptLevel1Close" commentText="$(resource.ns10_L_NoPromptLevel1Close)"></comment>
+      <comment policyRef="ns10:L_NoPromptLevel1Send" commentText="$(resource.ns10_L_NoPromptLevel1Send)"></comment>
+      <comment policyRef="ns10:L_OOMAddressAccess" commentText="$(resource.ns10_L_OOMAddressAccess)"></comment>
+      <comment policyRef="ns10:L_OOMAddressBook" commentText="$(resource.ns10_L_OOMAddressBook)"></comment>
+      <comment policyRef="ns10:L_OOMFormula" commentText="$(resource.ns10_L_OOMFormula)"></comment>
+      <comment policyRef="ns10:L_OOMMeetingTaskRequest" commentText="$(resource.ns10_L_OOMMeetingTaskRequest)"></comment>
+      <comment policyRef="ns10:L_OOMSaveAs" commentText="$(resource.ns10_L_OOMSaveAs)"></comment>
+      <comment policyRef="ns10:L_OOMSend" commentText="$(resource.ns10_L_OOMSend)"></comment>
+      <comment policyRef="ns10:L_OnExecuteCustomActionOOM" commentText="$(resource.ns10_L_OnExecuteCustomActionOOM)"></comment>
+      <comment policyRef="ns10:L_OutlookRichTextoptions" commentText="$(resource.ns10_L_OutlookRichTextoptions)"></comment>
+      <comment policyRef="ns10:L_OutlookSecurityMode" commentText="$(resource.ns10_L_OutlookSecurityMode)"></comment>
+      <comment policyRef="ns10:L_PermitdownloadofcontentfromSafeSenderandRecipientlists" commentText="$(resource.ns10_L_PermitdownloadofcontentfromSafeSenderandRecipientlists)"></comment>
+      <comment policyRef="ns10:L_Permitdownloadofcontentfromsafezones" commentText="$(resource.ns10_L_Permitdownloadofcontentfromsafezones)"></comment>
+      <comment policyRef="ns10:L_Plaintextoptions" commentText="$(resource.ns10_L_Plaintextoptions)"></comment>
+      <comment policyRef="ns10:L_PreventpublishingtoOfficeOnline" commentText="$(resource.ns10_L_PreventpublishingtoOfficeOnline)"></comment>
+      <comment policyRef="ns10:L_PreventpublishingtoaDAVserver" commentText="$(resource.ns10_L_PreventpublishingtoaDAVserver)"></comment>
+      <comment policyRef="ns10:L_Preventusersfromcustomizingattachmentsecuritysettings" commentText="$(resource.ns10_L_Preventusersfromcustomizingattachmentsecuritysettings)"></comment>
+      <comment policyRef="ns10:L_Promptusertochoosesecuritysettingsifdefaultsettingsfail" commentText="$(resource.ns10_L_Promptusertochoosesecuritysettingsifdefaultsettingsfail)"></comment>
+      <comment policyRef="ns10:L_Reademailasplaintext" commentText="$(resource.ns10_L_Reademailasplaintext)"></comment>
+      <comment policyRef="ns10:L_Readsignedemailasplaintext" commentText="$(resource.ns10_L_Readsignedemailasplaintext)"></comment>
+      <comment policyRef="ns10:L_RepliesOrForwardsToSignedEncryptedMessagesAreSignedEncrypted" commentText="$(resource.ns10_L_RepliesOrForwardsToSignedEncryptedMessagesAreSignedEncrypted)"></comment>
+      <comment policyRef="ns10:L_Restrictlevelofcalendardetails" commentText="$(resource.ns10_L_Restrictlevelofcalendardetails)"></comment>
+      <comment policyRef="ns10:L_Restrictuploadmethod" commentText="$(resource.ns10_L_Restrictuploadmethod)"></comment>
+      <comment policyRef="ns10:L_RetrievingCRLsCertificateRevocationLists" commentText="$(resource.ns10_L_RetrievingCRLsCertificateRevocationLists)"></comment>
+      <comment policyRef="ns10:L_RuninFIPScompliantmode" commentText="$(resource.ns10_L_RuninFIPScompliantmode)"></comment>
+      <comment policyRef="ns10:L_SMIMEinteroperabilitywithexternalclients" commentText="$(resource.ns10_L_SMIMEinteroperabilitywithexternalclients)"></comment>
+      <comment policyRef="ns10:L_SMIMEreceiptrequests" commentText="$(resource.ns10_L_SMIMEreceiptrequests)"></comment>
+      <comment policyRef="ns10:L_SecurityLevelOutlook" commentText="$(resource.ns10_L_SecurityLevelOutlook)"></comment>
+      <comment policyRef="ns10:L_Sendallsignedmessagesasclearsignedmessages" commentText="$(resource.ns10_L_Sendallsignedmessagesasclearsignedmessages)"></comment>
+      <comment policyRef="ns10:L_SetTrustedAddins" commentText="$(resource.ns10_L_SetTrustedAddins)"></comment>
+      <comment policyRef="ns10:L_SignatureWarning" commentText="$(resource.ns10_L_SignatureWarning)"></comment>
+      <comment policyRef="ns10:L_SynchronizeOutlookRSSFeedswithCommonFeedList" commentText="$(resource.ns10_L_SynchronizeOutlookRSSFeedswithCommonFeedList)"></comment>
+      <comment policyRef="ns10:L_TrustEmailfromContacts" commentText="$(resource.ns10_L_TrustEmailfromContacts)"></comment>
+      <comment policyRef="ns10:L_TurnoffRSSfeature" commentText="$(resource.ns10_L_TurnoffRSSfeature)"></comment>
+      <comment policyRef="ns11:L_AllowTrustedLocationsOnTheNetwork" commentText="$(resource.ns11_L_AllowTrustedLocationsOnTheNetwork)"></comment>
+      <comment policyRef="ns11:L_Determinewhethertoforceencryptedppt" commentText="$(resource.ns11_L_Determinewhethertoforceencryptedppt)"></comment>
+      <comment policyRef="ns11:L_DisableSlideUpdate" commentText="$(resource.ns11_L_DisableSlideUpdate)"></comment>
+      <comment policyRef="ns11:L_DisableTrustBarNotificationforunsigned" commentText="$(resource.ns11_L_DisableTrustBarNotificationforunsigned)"></comment>
+      <comment policyRef="ns11:L_DisableTrustedLoc" commentText="$(resource.ns11_L_DisableTrustedLoc)"></comment>
+      <comment policyRef="ns11:L_DoNotOpenFilesFromTheInternetZoneInProtectedView" commentText="$(resource.ns11_L_DoNotOpenFilesFromTheInternetZoneInProtectedView)"></comment>
+      <comment policyRef="ns11:L_DoNotOpenFilesInUnsafeLocationsInProtectedView" commentText="$(resource.ns11_L_DoNotOpenFilesInUnsafeLocationsInProtectedView)"></comment>
+      <comment policyRef="ns11:L_DownloadImages" commentText="$(resource.ns11_L_DownloadImages)"></comment>
+      <comment policyRef="ns11:L_Makehiddenmarkupvisible" commentText="$(resource.ns11_L_Makehiddenmarkupvisible)"></comment>
+      <comment policyRef="ns11:L_RequirethatApplicationExtensionsaresigned" commentText="$(resource.ns11_L_RequirethatApplicationExtensionsaresigned)"></comment>
+      <comment policyRef="ns11:L_RunPrograms" commentText="$(resource.ns11_L_RunPrograms)"></comment>
+      <comment policyRef="ns11:L_SavePowerPointfilesas" commentText="$(resource.ns11_L_SavePowerPointfilesas)"></comment>
+      <comment policyRef="ns11:L_SetDefaultFileBlockBehavior" commentText="$(resource.ns11_L_SetDefaultFileBlockBehavior)"></comment>
+      <comment policyRef="ns11:L_SetDocumentBehaviorIfFileValidationFails" commentText="$(resource.ns11_L_SetDocumentBehaviorIfFileValidationFails)"></comment>
+      <comment policyRef="ns11:L_TrustaccesstoVisualBasicProject" commentText="$(resource.ns11_L_TrustaccesstoVisualBasicProject)"></comment>
+      <comment policyRef="ns11:L_TurnOffFileValidation" commentText="$(resource.ns11_L_TurnOffFileValidation)"></comment>
+      <comment policyRef="ns11:L_TurnOffProtectedViewForAttachmentsOpenedFromOutlook" commentText="$(resource.ns11_L_TurnOffProtectedViewForAttachmentsOpenedFromOutlook)"></comment>
+      <comment policyRef="ns11:L_VBAWarningsPolicy" commentText="$(resource.ns11_L_VBAWarningsPolicy)"></comment>
+      <comment policyRef="ns13:L_DisableTrustBarNotificationforunsigned" commentText="$(resource.ns13_L_DisableTrustBarNotificationforunsigned)"></comment>
+      <comment policyRef="ns13:L_Preventfatallycorruptfilesfromopening" commentText="$(resource.ns13_L_Preventfatallycorruptfilesfromopening)"></comment>
+      <comment policyRef="ns13:L_PublisherAutomationSecurityLevel" commentText="$(resource.ns13_L_PublisherAutomationSecurityLevel)"></comment>
+      <comment policyRef="ns13:L_RequirethatApplicationExtensionsaresigned" commentText="$(resource.ns13_L_RequirethatApplicationExtensionsaresigned)"></comment>
+      <comment policyRef="ns13:L_VBAWarningsPolicy" commentText="$(resource.ns13_L_VBAWarningsPolicy)"></comment>
+      <comment policyRef="ns14:L_DisableTrustBarNotificationforunsigned" commentText="$(resource.ns14_L_DisableTrustBarNotificationforunsigned)"></comment>
+      <comment policyRef="ns14:L_RequirethatApplicationExtensionsaresigned" commentText="$(resource.ns14_L_RequirethatApplicationExtensionsaresigned)"></comment>
+      <comment policyRef="ns14:L_VBAWarningsPolicy" commentText="$(resource.ns14_L_VBAWarningsPolicy)"></comment>
+      <comment policyRef="ns15:L_AllowTrustedLocationsOnTheNetwork" commentText="$(resource.ns15_L_AllowTrustedLocationsOnTheNetwork)"></comment>
+      <comment policyRef="ns15:L_CustomMarkupWarning" commentText="$(resource.ns15_L_CustomMarkupWarning)"></comment>
+      <comment policyRef="ns15:L_DeterminewhethertoforceencryptedWord" commentText="$(resource.ns15_L_DeterminewhethertoforceencryptedWord)"></comment>
+      <comment policyRef="ns15:L_DisableTrustBarNotificationforunsigned" commentText="$(resource.ns15_L_DisableTrustBarNotificationforunsigned)"></comment>
+      <comment policyRef="ns15:L_DisableTrustedLoc" commentText="$(resource.ns15_L_DisableTrustedLoc)"></comment>
+      <comment policyRef="ns15:L_DoNotOpenFilesFromTheInternetZoneInProtectedView" commentText="$(resource.ns15_L_DoNotOpenFilesFromTheInternetZoneInProtectedView)"></comment>
+      <comment policyRef="ns15:L_DoNotOpenFilesInUnsafeLocationsInProtectedView" commentText="$(resource.ns15_L_DoNotOpenFilesInUnsafeLocationsInProtectedView)"></comment>
+      <comment policyRef="ns15:L_DoNotUseOnlineTranslationDictionaries" commentText="$(resource.ns15_L_DoNotUseOnlineTranslationDictionaries)"></comment>
+      <comment policyRef="ns15:L_RequirethatApplicationExtensionsaresigned" commentText="$(resource.ns15_L_RequirethatApplicationExtensionsaresigned)"></comment>
+      <comment policyRef="ns15:L_SaveWordfilesas" commentText="$(resource.ns15_L_SaveWordfilesas)"></comment>
+      <comment policyRef="ns15:L_SetDefaultFileBlockBehavior" commentText="$(resource.ns15_L_SetDefaultFileBlockBehavior)"></comment>
+      <comment policyRef="ns15:L_SetDocumentBehaviorIfFileValidationFails" commentText="$(resource.ns15_L_SetDocumentBehaviorIfFileValidationFails)"></comment>
+      <comment policyRef="ns15:L_TrustaccesstoVisualBasicProject" commentText="$(resource.ns15_L_TrustaccesstoVisualBasicProject)"></comment>
+      <comment policyRef="ns15:L_TurnOffFileValidation" commentText="$(resource.ns15_L_TurnOffFileValidation)"></comment>
+      <comment policyRef="ns15:L_TurnOffProtectedViewForAttachmentsOpenedFromOutlook" commentText="$(resource.ns15_L_TurnOffProtectedViewForAttachmentsOpenedFromOutlook)"></comment>
+      <comment policyRef="ns15:L_UpdateautomaticlinksatOpen" commentText="$(resource.ns15_L_UpdateautomaticlinksatOpen)"></comment>
+      <comment policyRef="ns15:L_VBAWarningsPolicy" commentText="$(resource.ns15_L_VBAWarningsPolicy)"></comment>
+      <comment policyRef="ns15:L_Warnbeforeprintingsavingorsendingafilethatcontainstrackedcha" commentText="$(resource.ns15_L_Warnbeforeprintingsavingorsendingafilethatcontainstrackedcha)"></comment>
+      <comment policyRef="ns15:L_Word2000BinaryDocumentsAndTemplates" commentText="$(resource.ns15_L_Word2000BinaryDocumentsAndTemplates)"></comment>
+      <comment policyRef="ns15:L_Word2AndEarlierBinaryDocumentsAndTemplates" commentText="$(resource.ns15_L_Word2AndEarlierBinaryDocumentsAndTemplates)"></comment>
+      <comment policyRef="ns15:L_Word6Pt0BinaryDocumentsAndTemplates" commentText="$(resource.ns15_L_Word6Pt0BinaryDocumentsAndTemplates)"></comment>
+      <comment policyRef="ns15:L_Word95BinaryDocumentsAndTemplates" commentText="$(resource.ns15_L_Word95BinaryDocumentsAndTemplates)"></comment>
+      <comment policyRef="ns15:L_Word97BinaryDocumentsAndTemplates" commentText="$(resource.ns15_L_Word97BinaryDocumentsAndTemplates)"></comment>
+      <comment policyRef="ns15:L_WordXPBinaryDocumentsAndTemplates" commentText="$(resource.ns15_L_WordXPBinaryDocumentsAndTemplates)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns0_PopupBlocker_AllowList">Most companies require this setting</string>
+      <string id="ns0_RestrictFormSuggest">Rule Title: AutoComplete feature for forms must be disallowed. STIG ID: DTBI690-IE11 Rule ID: SV-59673r1_rule Vuln ID: V-46807 Severity: CAT II Class: Unclass</string>
+      <string id="ns0_RestrictFormSuggestPW">Rule Title: Turn on the auto-complete feature for user names and passwords on forms must be disabled. STIG ID: DTBI725-IE11 Rule ID: SV-59681r1_rule Vuln ID: V-46815 Severity: CAT II Class: Unclass</string>
+      <string id="ns0_RestrictHomePage">Rule Title:  The IE home page is not set to blank or a trusted site.
+STIG ID: DTBI001  Rule ID: SV-6278r3_rule  Vuln ID: V-6228
+Severity: CAT II Class: Unclass</string>
+      <string id="ns1_L_ModalTrustDecisionOnly">Rule Title:  Database functionality configurations must be displayed to the user.
+STIG ID: DTOO135  Rule ID: SV-52771r1_rule  Vuln ID: V-17757
+Severity: CAT II Class: Unclass</string>
+      <string id="ns2_L_Donotprompttoconvertolderdatabases">Rule Title: Prompts to convert older databases must be enforced.
+STIG ID: DTOO137 Rule ID: SV-52773r1_rule Vuln ID: V-17603
+Severity: CAT III Class: Unclass</string>
+      <string id="ns2_L_ModalTrustDecisionOnly">Rule Title: Database functionality configurations must be displayed to the user.
+STIG ID: DTOO135 Rule ID: SV-52771r1_rule Vuln ID: V-17757
+Severity: CAT II Class: Unclass</string>
+      <string id="ns2_L_VBAWarningsPolicy">Rule Title: Trust access for VBA must be disallowed.
+STIG ID: DTOO304 Rule ID: SV-52776r1_rule Vuln ID: V-17545
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_AllowTrustedLocationsOnTheNetwork">Rule Title: Disallowance of trusted locations on the network must be enforced.
+STIG ID: DTOO134 Rule ID: SV-53724r1_rule Vuln ID: V-17520
+Severity: CAT II Class: Unclass
+Most companies use this</string>
+      <string id="ns4_L_Asktoupdateautomaticlinks">Rule Title: The Update of automatic links setting must be configured to prompt user before allowing links to be updated.
+STIG ID: DTOO150 Rule ID: SV-53815r1_rule Vuln ID: V-17732
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_DBaseIIIANDIVFiles">Rule Title: Open/Save actions for dBase III / IV files must be blocked.
+STIG ID: DTOO122 Rule ID: SV-53678r1_rule Vuln ID: V-26595
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_DeterminewhethertoforceencryptedExcel">Rule Title: The scanning of encrypted macros in open XML documents must be enforced.
+STIG ID: DTOO142 Rule ID: SV-53810r1_rule Vuln ID: V-17473
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_DifAndSylkFiles">Rule Title: Open/Save actions for Dif and Sylk files must be blocked.
+STIG ID: DTOO112 Rule ID: SV-53620r1_rule Vuln ID: V-26596
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_DisableAutoRepublish">Rule Title: Automatic republish to web pages must be disallowed.
+STIG ID: DTOO140 Rule ID: SV-53731r1_rule Vuln ID: V-17652
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_DisableTrustBarNotificationforunsigned">Rule Title: Trust Bar Notifications for unsigned application add-ins must be blocked.
+STIG ID: DTOO131 Rule ID: SV-53711r1_rule Vuln ID: V-17187
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_DisableTrustedLoc">Rule Title: All automatic loading from trusted locations must be disabled.
+STIG ID: DTOO133 Rule ID: SV-53723r1_rule Vuln ID: V-17471
+Severity: CAT II Class: Unclass
+Most companies use this</string>
+      <string id="ns4_L_DoNotOpenFilesFromTheInternetZoneInProtectedView">Rule Title: Files from the Internet zone must be opened in Protected View.
+STIG ID: DTOO121 Rule ID: SV-53676r1_rule Vuln ID: V-26614
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_DoNotShowAutoRepublishWarningAlert">Rule Title: The AutoRepublish warning alert must be provided.
+STIG ID: DTOO141 Rule ID: SV-53803r1_rule Vuln ID: V-17744
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Donotshowdataextractionoptionswhenopeningcorruptworkbooks">Rule Title: Corrupt workbook options must be disallowed.
+STIG ID: DTOO419 Rule ID: SV-53843r1_rule Vuln ID: V-41346
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Excel2MacrosheetsAndAddInFiles">Rule Title: Open/Save actions for Excel 2 macrosheets and add-in files must be blocked.
+STIG ID: DTOO113 Rule ID: SV-53622r1_rule Vuln ID: V-26597
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Excel2Worksheets">Rule Title: Open/Save actions for Excel 2 worksheets must be blocked.
+STIG ID: DTOO114 Rule ID: SV-53624r1_rule Vuln ID: V-26598
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Excel3Worksheets">Rule Title: Open/Save actions for Excel 3 worksheets must be blocked.
+STIG ID: DTOO116 Rule ID: SV-53628r1_rule Vuln ID: V-26601
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Excel4MacrosheetsAndAddInFiles">Rule Title: Open/Save actions for Excel 3 macrosheets and add-in files must be blocked.
+STIG ID: DTOO115 Rule ID: SV-53626r1_rule Vuln ID: V-26599
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Excel4Workbooks">Rule Title: Open/Save actions for Excel 4 workbooks must be blocked.
+STIG ID: DTOO106 Rule ID: SV-53611r1_rule Vuln ID: V-26608
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Excel4Worksheets">Rule Title: Open/Save actions for Excel 4 worksheets must be blocked.
+STIG ID: DTOO107 Rule ID: SV-53612r1_rule Vuln ID: V-26609
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Excel9597WorkbooksAndTemplates">Rule Title: Actions for Excel 95-97 workbooks and templates must be configured to edit in Protected View.
+STIG ID: DTOO109 Rule ID: SV-53615r1_rule Vuln ID: V-26611
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Excel95Workbooks">Rule Title: Actions for Excel 95 workbooks must be configured to edit in Protected View.
+STIG ID: DTOO108 Rule ID: SV-53614r1_rule Vuln ID: V-26610
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Forcefileextenstionstomatch">Rule Title: File types must be configured to provide mismatch warnings
+STIG ID: DTOO143 Rule ID: SV-53811r1_rule Vuln ID: V-17621
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_Internetandnetworkpathsashyperlinks">Rule Title: Internet links and Network UNCs created as embedded hyperlinks must be prevented.
+STIG ID: DTOO138 Rule ID: SV-53725r1_rule Vuln ID: V-17650
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_LoadpicturesfromWebpagesnotcreatedinExcel">Rule Title: The loading of images from web pages must not be allowed.
+STIG ID: DTOO152 Rule ID: SV-53820r1_rule Vuln ID: V-17751
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_RequirethatApplicationExtensionsaresigned">Rule Title: Add-ins to Office applications must be signed by a Trusted Publisher.
+STIG ID: DTOO127 Rule ID: SV-53682r1_rule Vuln ID: V-26589
+Most companies use this</string>
+      <string id="ns4_L_SaveExcelfilesas">Rule Title: The Save commands default file format must be configured.
+STIG ID: DTOO139 Rule ID: SV-53726r1_rule Vuln ID: V-17521
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_SetDefaultFileBlockBehavior">Rule Title: Blocking as default file block opening behavior must be enforced.
+STIG ID: DTOO110 Rule ID: SV-53617r1_rule Vuln ID: V-26612
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_SetDocumentBehaviorIfFileValidationFails">Rule Title: Document behavior if file validation fails must be set.
+STIG ID: DTOO292 Rule ID: SV-53834r1_rule Vuln ID: V-26616
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_StoremacroinPersonalMacroWorkbookbydefault">Rule Title: Macro storage must be in personal macro workbooks.
+STIG ID: DTOO145 Rule ID: SV-53812r1_rule Vuln ID: V-17804
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_TrustaccesstoVisualBasicProject">Rule Title: Trust access for VBA must be disallowed.
+STIG ID: DTOO146 Rule ID: SV-53813r1_rule Vuln ID: V-17522
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_TurnOffFileValidation">Rule Title: Configuration for file validation must be enforced.
+STIG ID: DTOO119 Rule ID: SV-53632r1_rule Vuln ID: V-26592
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_TurnOffProtectedViewForAttachmentsOpenedFromOutlook">Rule Title: Excel attachments opened from Outlook must be in Protected View.
+STIG ID: DTOO293 Rule ID: SV-53837r1_rule Vuln ID: V-26617
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_VBAWarningsPolicy">Disable macros without notification</string>
+      <string id="ns4_L_WebContentWarningLevel">Rule Title: WEBSERVICE functions must be disabled.
+STIG ID: DTOO418 Rule ID: SV-53841r1_rule Vuln ID: V-41344
+Severity: CAT II Class: Unclass</string>
+      <string id="ns4_L_WebPagesAndExcel2003XMLSpreadsheets">Rule Title: Open/Save actions for web pages and Excel 2003 XML spreadsheets must be blocked.
+STIG ID: DTOO120 Rule ID: SV-53638r2_rule Vuln ID: V-26613
+Severity: CAT III Class: Unclass</string>
+      <string id="ns5_L_ActiveXBeaconingUIPolicy">Rule Title:  Beaconing of UI forms  with ActiveX controls must be enforced.
+STIG ID: DTOO165  Rule ID: SV-53359r1_rule  Vuln ID: V-17746
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_BeaconingUIPolicy">Rule Title:  Beaconing UI shown for opened forms must be configured.
+STIG ID: DTOO164  Rule ID: SV-53357r1_rule  Vuln ID: V-17745
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_ControlBehaviorforWindowsSharePointServerGradualUpgrade">Rule Title:  Redirection behavior for upgraded web sites by SharePoint must be blocked.
+STIG ID: DTOO157  Rule ID: SV-53337r1_rule  Vuln ID: V-17576
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_ControlbehaviorwhenopeningInfoPathemailformsconta">Rule Title:  Opening behavior for Email forms containing code or scripts must be controlled.
+STIG ID: DTOO167  Rule ID: SV-53362r1_rule  Vuln ID: V-17580
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_DisableCacheXSNPolicy">Rule Title:  Disable dynamic caching of the form template in InfoPath eMail forms.  
+STIG ID: DTOO169  Rule ID: SV-53378r1_rule  Vuln ID: V-17654
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_DisableEmailFormsPolicy">Rule Title:  InfoPath 2003 forms as email forms in InfoPath 2013 must be disallowed.
+STIG ID: DTOO170  Rule ID: SV-53379r1_rule  Vuln ID: V-17668
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_DisableFullTrustEmailFormsPolicy">Rule Title:  Disabling of email forms from the Full Trust Security Zone must be configured.
+STIG ID: DTOO173  Rule ID: SV-53383r1_rule  Vuln ID: V-17655
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_DisableInternetEmailFormsPolicy">Rule Title:  Disabling email forms from the Internet Security Zone must be configured.
+STIG ID: DTOO172  Rule ID: SV-53382r1_rule  Vuln ID: V-17656
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_DisableIntranetEmailFormsPolicy">Rule Title:  InfoPath must be enforced to not use email forms from the Intranet security zone.
+STIG ID: DTOO294  Rule ID: SV-53385r1_rule  Vuln ID: V-26618
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_DisableOutlookEmailFormsPolicy">Rule Title:  InfoPath email forms in Outlook must be disallowed.
+STIG ID: DTOO295  Rule ID: SV-53389r1_rule  Vuln ID: V-26619
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_DisableTrustBarNotificationforunsigned">Rule Title:  Trust Bar Notifications for unsigned application add-ins must be blocked.
+STIG ID: DTOO131  Rule ID: SV-53331r1_rule  Vuln ID: V-17187
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_DisableTrustedLoc">Rule Title:  All automatic loading from Trusted Locations must be disabled.
+STIG ID: DTOO133  Rule ID: SV-53333r1_rule  Vuln ID: V-17471
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_Disablefullytrustedsolutionsfullaccesstomachine">Rule Title:  Disabling of Fully Trusted Solutions access to computers must be configured.
+STIG ID: DTOO159  Rule ID: SV-53353r1_rule  Vuln ID: V-17658
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_DisableopeningofsolutionsfromtheInternetsecurityzone">Rule Title:  Disabling the opening of solutions from the Internet Security Zone must be configured.
+STIG ID: DTOO158  Rule ID: SV-53340r1_rule  Vuln ID: V-17663
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_Displayawarningthataformisdigitallysigned">Rule Title:  A form that is digitally signed must be displayed with a warning.
+STIG ID: DTOO297  Rule ID: SV-53432r1_rule  Vuln ID: V-26621
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_EmailFormsBeaconingUI">Rule Title:  Email with InfoPath forms must be configured to show UI to recipients.
+STIG ID: DTOO176  Rule ID: SV-53384r1_rule  Vuln ID: V-17611
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_FormTemplatePolicy">Rule Title:  Disabling sending form templates with the email forms must be configured.
+STIG ID: DTOO168  Rule ID: SV-53366r1_rule  Vuln ID: V-17667
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_OfflineModestatus">Rule Title:  Offline Mode capability to cache queries for offline mode must be configured.
+STIG ID: DTOO156  Rule ID: SV-53335r2_rule  Vuln ID: V-17758
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_Preventusersfromallowingunsafefiletypestobeattachedtoforms">Rule Title:  Unsafe file types must be prevented from being attached to InfoPath forms.
+STIG ID: DTOO160  Rule ID: SV-53355r1_rule  Vuln ID: V-17764
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_RequirethatApplicationExtensionsaresigned">Rule Title:  Add-ins to Office applications must be signed by a Trusted Publisher.
+STIG ID: DTOO127  Rule ID: SV-53328r1_rule  Vuln ID: V-26589
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_RestrictedEmailFormsPolicy">Rule Title:  Disabling email forms running in Restricted Security Level must be configured.
+STIG ID: DTOO171  Rule ID: SV-53381r1_rule  Vuln ID: V-17657
+Severity: CAT II Class: Unclass</string>
+      <string id="ns5_L_RunManagedCodeFromInternet">Rule Title:  Disabling opening forms with managed code from the Internet security zone must be configured.
+STIG ID: DTOO296  Rule ID: SV-53392r1_rule  Vuln ID: V-26620
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_ActiveXControlInitialization">Rule Title: ActiveX control initialization must be disabled.
+STIG ID: DTOO191 Rule ID: SV-52728r1_rule Vuln ID: V-17547
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_AllowPNGasanoutputformat">Rule Title: Choice of output to include PNG (Portable Network Graphics) must be disallowed.
+STIG ID: DTOO181 Rule ID: SV-52718r1_rule Vuln ID: V-17561
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_AllowUnsecureApps">Rule Title: The ability to run unsecure Office apps must be disabled.
+STIG ID: DTOO412 Rule ID: SV-53214r1_rule Vuln ID: V-40882
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Allowmixofpolicyanduserlocations">Rule Title: A mix of policy and user locations for Office Products must be disallowed.
+STIG ID: DTOO196 Rule ID: SV-52745r1_rule Vuln ID: V-17560
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_AllowuserswithearlierversionsofOfficetoreadwithbrowsers">Rule Title: Office must be configured to not allow read with browsers.
+STIG ID: DTOO200 Rule ID: SV-52749r1_rule Vuln ID: V-17583
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Alwaysrequireuserstoconnecttoverifypermission">Rule Title: Connection verification of permissions must be enforced.
+STIG ID: DTOO201 Rule ID: SV-52750r1_rule Vuln ID: V-17731
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_AutomationSecurity">Rule Title: Automation Security to enforce macro level security in Office documents must be configured.
+STIG ID: DTOO193 Rule ID: SV-52730r1_rule Vuln ID: V-17741
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_BlockopeningofprereleaseExcel">Rule Title: The opening of pre-release versions of file formats new to Excel 2013 through the Compatibility Pack for Office 2013 and Excel 2013 Converter must be blocked.
+STIG ID: DTOO210 Rule ID: SV-53824r1_rule Vuln ID: V-17322
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_BlockopeningofprereleasePPT">Rule Title: The opening of pre-release versions of file formats new to PowerPoint 2013 through the Compatibility Pack for Office 2013 and PowerPoint 2013 Converter must be blocked.
+STIG ID: DTOO210 Rule ID: SV-53513r1_rule Vuln ID: V-17322
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_ControlBlogging">Rule Title: Blogging entries created from inside Office products must be configured for SharePoint only.
+STIG ID: DTOO212 Rule ID: SV-52756r1_rule Vuln ID: V-17581
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableDefaultService">Rule Title: Office Presentation Service must be removed as an option for presenting PowerPoint and Word online.
+STIG ID: DTOO408 Rule ID: SV-53207r1_rule Vuln ID: V-40875
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableFaxOverInternetfeature">Rule Title: The Internet Fax Feature must be disabled.
+STIG ID: DTOO198 Rule ID: SV-52747r1_rule Vuln ID: V-17661
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableMovie">Rule Title: The video informing a user about signing into Office365 must be disabled.
+STIG ID: DTOO403 Rule ID: SV-53192r1_rule Vuln ID: V-40860
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableOfficeFirstrun">Rule Title: The first-run prompt to sign into Office365 must be disabled.
+STIG ID: DTOO404 Rule ID: SV-53193r1_rule Vuln ID: V-40861
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableOfficeStore">Rule Title: Users must be prevented from using or inserting apps that come from the Office Store.
+STIG ID: DTOO413 Rule ID: SV-53215r1_rule Vuln ID: V-40883
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableOfficeUserRoamingSettings">Rule Title: Roaming settings must be stored locally and not synchronized to the Microsoft Office roaming settings web service.
+STIG ID: DTOO414 Rule ID: SV-53216r1_rule Vuln ID: V-40884
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableOptinWizard">Rule Title: The Opt-In Wizard must be disabled.
+STIG ID: DTOO183 Rule ID: SV-52720r1_rule Vuln ID: V-17664
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableProgrammaticAccess">Rule Title: The ability to create an online presentation programmatically must be disabled.
+STIG ID: DTOO409 Rule ID: SV-53211r1_rule Vuln ID: V-40879
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableScreenshotAutoHyperlink">Rule Title: The ability to automatically hyperlink screenshots within Word, PowerPoint, Excel and Outlook must be disabled.
+STIG ID: DTOO406 Rule ID: SV-53195r1_rule Vuln ID: V-40863
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableSmartDocumentsuseofmanifests">Rule Title: Smart Documents use of Manifests in Office must be disallowed.
+STIG ID: DTOO197 Rule ID: SV-52746r1_rule Vuln ID: V-17669
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableallTrustBarnotificationsfor">Rule Title: Trust Bar notifications for Security messages must be enforced.
+STIG ID: DTOO186 Rule ID: SV-52723r1_rule Vuln ID: V-17590
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisableinclusionofdocumentpropertiesinPDFandXPSoutput">Rule Title: Inclusion of document properties for PDF and XPS output must be disallowed.
+STIG ID: DTOO206 Rule ID: SV-52753r1_rule Vuln ID: V-17660
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisablepasswordtoopenUI">Rule Title: Passwords for secured documents must be enforced.
+STIG ID: DTOO195 Rule ID: SV-52744r1_rule Vuln ID: V-17665
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_DisabletheOfficeclientfrompolling">Rule Title: Office client polling of SharePoint servers published links must be disabled.
+STIG ID: DTOO208 Rule ID: SV-52755r1_rule Vuln ID: V-17670
+Severity: CAT II Class: Unclass
+Most companies use this</string>
+      <string id="ns7_L_DocumentInformationpanelBeaconingUI">Rule Title: Document Information panel Beaconing must show UI.
+STIG ID: DTOO207 Rule ID: SV-52754r1_rule Vuln ID: V-17605
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_EnableCustomerExperienceImprovementProgram">Rule Title: The Customer Experience Improvement Program for Office must be disabled.
+STIG ID: DTOO184 Rule ID: SV-52721r1_rule Vuln ID: V-17612
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_EnableLogging">Rule Title: The Office Telemetry Agent and Office applications must be configured to collect telemetry data.
+STIG ID: DTOO417 Rule ID: SV-53219r1_rule Vuln ID: V-40887
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_EncryptDocumentProperties">Rule Title: Encrypt document properties must be configured for OLE documents.
+STIG ID: DTOO321 Rule ID: SV-52757r1_rule Vuln ID: V-26704
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Encryptiontypeforpasswordprotectedoffice972003">Rule Title: The encryption type for password protected Office 97 thru Office 2003 must be set.
+STIG ID: DTOO190 Rule ID: SV-52727r1_rule Vuln ID: V-17617
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Encryptiontypeforpasswordprotectedofficeopen">Rule Title: The encryption type for password protected Open XML files must be set.
+STIG ID: DTOO189 Rule ID: SV-52726r1_rule Vuln ID: V-17619
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_ImproveProofingTools">Rule Title: The Help Improve Proofing Tools feature for Office must be configured.
+STIG ID: DTOO182 Rule ID: SV-52719r1_rule Vuln ID: V-17627
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Legacyformatsignatires">Rule Title: Legacy format signatures must be enabled.
+STIG ID: DTOO203 Rule ID: SV-52751r1_rule Vuln ID: V-17749
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_LoadControlsinForms3">Rule Title: Load controls in forms3 must be disabled from loading.
+STIG ID: DTOO192 Rule ID: SV-52729r1_rule Vuln ID: V-17750
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_NoExtensibilityCustomizationFromDocumentPolicy">Rule Title: Outlook 2013 application must be prevented from loading any custom user interface (UI) code.
+STIG ID: DTOO305 Rule ID: SV-54060r1_rule Vuln ID: V-26625
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_OfficeInventoryAgentFilemetadataObfuscation">Rule Title: The Office Telemetry Agent must be configured to obfuscate the file name, file path, and title of Office documents before uploading telemetry data to the shared folder.
+STIG ID: DTOO416 Rule ID: SV-53218r1_rule Vuln ID: V-40886
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_OfficeInventoryAgentUpload">Rule Title: The ability of the Office Telemetry Agent to periodically upload telemetry data to a shared folder must be disabled.
+STIG ID: DTOO415 Rule ID: SV-53217r1_rule Vuln ID: V-40885
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Onlinecontentoptions">Rule Title: Online content options must be configured for offline content availability.
+STIG ID: DTOO345 Rule ID: SV-52758r1_rule Vuln ID: V-26630
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_OpenOfficedocumentsasreadwritewhilebrowsing">Rule Title: Documents must be configured to not open as Read Write when browsing.
+STIG ID: DTOO179 Rule ID: SV-52714r1_rule Vuln ID: V-17759
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Preventusersfromchangingpermissions">Rule Title: Changing permissions on rights managed content for users must be enforced.
+STIG ID: DTOO199 Rule ID: SV-52748r1_rule Vuln ID: V-17765
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Protectdocumentmetadataforpasswordprotected">Rule Title: Document metadata for password protected files must be protected.
+STIG ID: DTOO188 Rule ID: SV-52725r1_rule Vuln ID: V-17768
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Protectdocumentmetadataforrightsmanaged">Rule Title: Rights managed Office Open XML files must be protected.
+STIG ID: DTOO187 Rule ID: SV-52724r1_rule Vuln ID: V-17769
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_RelyonVMLfordisplayinggraphicsinbrowsers">Rule Title: Relying on Vector markup Language (VML) for displaying graphics in browsers must be disallowed.
+STIG ID: DTOO180 Rule ID: SV-52715r1_rule Vuln ID: V-17773
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Screenshot">Rule Title: When using the Office Feedback tool, the ability to include a screenshot must be disabled.
+STIG ID: DTOO410 Rule ID: SV-53212r1_rule Vuln ID: V-40880
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_SendFeedback">Rule Title: The Office Feedback tool must be disabled.
+STIG ID: DTOO411 Rule ID: SV-53213r1_rule Vuln ID: V-40881
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_ShowSkyDriveSignIn">Rule Title: The prompt to save to SkyDrive must be disabled.
+STIG ID: DTOO407 Rule ID: SV-53196r1_rule Vuln ID: V-40864
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_SignInOptions">Rule Title: The ability to sign into Office365 must be disabled.
+STIG ID: DTOO405 Rule ID: SV-53194r1_rule Vuln ID: V-40862
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Suppresshyperlinkwarnings">Rule Title: Hyperlink warnings for Office must be configured for use.
+STIG ID: DTOO194 Rule ID: SV-52731r1_rule Vuln ID: V-17659
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_Supressexternalsigningservicesmenuitems">Rule Title: External Signature Services Menu for Office must be suppressed.
+STIG ID: DTOO204 Rule ID: SV-52752r1_rule Vuln ID: V-17805
+Severity: CAT II Class: Unclass</string>
+      <string id="ns7_L_TrustedLoc01">This is where you set trusted locations that will affect all Office Suites.  Try not to include your entire network and be as specific as possible.  If you make everything a trusted site it defeats the purpose.
+NOTE: TRUSTED SITES ALLOW MACROS TO EXECUTE WITH NO WARNING.</string>
+      <string id="ns7_L_UpdateReliabilityPolicy">Rule Title: Automatic receiving of small updates to improve reliability must be disallowed.
+STIG ID: DTOO185 Rule ID: SV-52722r1_rule Vuln ID: V-17740
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Accesstopublishedcalendars">Rule Title: Access restriction settings for published calendars must be configured.
+STIG ID: DTOO219 Rule ID: SV-53872r1_rule Vuln ID: V-17546
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_AddpeopleIemailtotheSafeSendersList">Rule Title: Recipients of sent email must be unable to be added to the safe senders list.
+STIG ID: DTOO224 Rule ID: SV-53885r1_rule Vuln ID: V-17558
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_AllowActiveXOneOffForms">Rule Title: ActiveX One-Off forms must be configured.
+STIG ID: DTOO234 Rule ID: SV-53915r1_rule Vuln ID: V-17559
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_AllowUsersToLowerAttachments">Rule Title: Action to demote an EMail Level 1 attachment to Level 2 must be configured.
+STIG ID: DTOO241 Rule ID: SV-53954r1_rule Vuln ID: V-17569
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_AttachmentSecureTemporaryFolder">Rule Title: Attachments using generated name for secure temporary folders must be configured.
+STIG ID: DTOO269 Rule ID: SV-54038r1_rule Vuln ID: V-17733
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_AuthenticationwithExchangeServer">Rule Title: Outlook must be configured to force authentication when connecting to an Exchange server.
+STIG ID: DTOO280 Rule ID: SV-54053r1_rule Vuln ID: V-17734
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Automaticallydownloadenclosures">Rule Title: Automatically downloading enclosures on RSS must be disallowed.
+STIG ID: DTOO313 Rule ID: SV-54061r1_rule Vuln ID: V-26632
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_AutomaticallydownloadenclosuresWebCal">Rule Title: Automatic download of Internet Calendar appointment attachments must be disallowed.
+STIG ID: DTOO284 Rule ID: SV-54057r1_rule Vuln ID: V-17738
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_BlockInternet">Rule Title: Internet with Safe Zones for Picture Download must be disabled.
+STIG ID: DTOO274 Rule ID: SV-54048r1_rule Vuln ID: V-17630
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_BlockIntranet">Rule Title: Intranet with Safe Zones for automatic picture downloads must be configured.
+STIG ID: DTOO275 Rule ID: SV-54049r1_rule Vuln ID: V-17634
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_BlockTrustedZones">Rule Title: IE Trusted Zones assumed trusted must be blocked.
+STIG ID: DTOO273 Rule ID: SV-54047r1_rule Vuln ID: V-17564
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Blockexternalcontent">Rule Title: External content and pictures in HTML email must be displayed.
+STIG ID: DTOO270 Rule ID: SV-54042r1_rule Vuln ID: V-17672
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_ConfigureAddInTrustLevel">Rule Title: The Add-In Trust Level must be configured.
+STIG ID: DTOO236 Rule ID: SV-53919r1_rule Vuln ID: V-17566
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_DisableOutlookobjectmodelscripts">Metalogix needs this disabled to view shared mailboxes stubbed items
+
+Rule Title: Outlook Object Model scripts must be disallowed to run for shared folders.
+STIG ID: DTOO232 Rule ID: SV-53899r1_rule Vuln ID: V-17676
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_DisableOutlookobjectmodelscriptsforpublicfolders">Rule Title: Outlook Object Model scripts must be disallowed to run for public folders.
+STIG ID: DTOO233 Rule ID: SV-53903r1_rule Vuln ID: V-17675
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_DisableRememberPasswordcheckboxforInternetEmailsettingsdialo">Rule Title: The remember password for internet e-mail accounts must be disabled.
+STIG ID: DTOO237 Rule ID: SV-53923r1_rule Vuln ID: V-17587
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_DisableSignatures">Rule Title: The ability to add signatures to email messages must be allowed.
+STIG ID: DTOO227 Rule ID: SV-53886r1_rule Vuln ID: V-17673
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_DisableWeather">Rule Title: The use of the weather bar in Outlook must be disabled
+STIG ID: DTOO424 Rule ID: SV-54068r1_rule Vuln ID: V-41492
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_DisableWebCalIntegration">Rule Title: Internet calendar integration in Outlook must be disabled.
+STIG ID: DTOO285 Rule ID: SV-54058r1_rule Vuln ID: V-17678
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Disablefolderhomepagesforfoldersinnondefaultstores">Rule Title: Folders in non-default stores, set as folder home pages, must be disallowed.
+STIG ID: DTOO230 Rule ID: SV-53893r1_rule Vuln ID: V-17674
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Disableuserentriestoserverlist">Rule Title: User Entries to Server List must be disallowed.
+STIG ID: DTOO286 Rule ID: SV-54059r1_rule Vuln ID: V-17944
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Donotcheckemailaddressagainstaddressofcertificatesbeingusing">Rule Title: Check e-mail addresses against addresses of certificates being used must be disallowed.
+STIG ID: DTOO320 Rule ID: SV-54066r1_rule Vuln ID: V-26702
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Downloadfulltextofarticles">Rule Title: Disabling download full text of articles as HTML must be configured.
+STIG ID: DTOO283 Rule ID: SV-54056r1_rule Vuln ID: V-17610
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_EnableRPCEncryption">Rule Title: RPC encryption between Outlook and Exchange server must be enforced.
+STIG ID: DTOO279 Rule ID: SV-54052r1_rule Vuln ID: V-17615
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_EnableScriptsInOneOffForms">Rule Title: Scripts in One-Off Outlook forms must be disallowed.
+STIG ID: DTOO246 Rule ID: SV-53993r1_rule Vuln ID: V-17562
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Enablelinksinemailmessages">Rule Title: Hyperlinks in suspected phishing email messages must be disallowed.
+STIG ID: DTOO277 Rule ID: SV-54051r1_rule Vuln ID: V-17613
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_HideJunkMailUI">Rule Title: Junk Mail UI must be configured.
+STIG ID: DTOO221 Rule ID: SV-53874r1_rule Vuln ID: V-17624
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_InternetAndNetworkPathsIntoHyperlinks">Rule Title: Text in Outlook that represents Internet and network paths must not be automatically turned into hyperlinks.
+STIG ID: DTOO425 Rule ID: SV-54069r1_rule Vuln ID: V-41493
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Level1Attachments">Rule Title: The ability to display level 1 attachments must be disallowed.
+STIG ID: DTOO240 Rule ID: SV-53941r1_rule Vuln ID: V-17671
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Level1RemoveFilePolicy">Rule Title: Level 1 file extensions must be blocked and not removed.
+STIG ID: DTOO244 Rule ID: SV-55898r1_rule Vuln ID: V-17774
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Level2RemoveFilePolicy">Rule Title: Level 2 file extensions must be blocked and not removed.
+STIG ID: DTOO245 Rule ID: SV-53989r1_rule Vuln ID: V-17775
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_MSGUnicodeformatwhendraggingtofilesystem">Rule Title: Dragging Unicode email messages to file system must be disallowed.
+STIG ID: DTOO231 Rule ID: SV-53897r1_rule Vuln ID: V-17812
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_MakeOutlookthedefaultprogramforEmailContactsandCalendar">Rule Title: Outlook must be enforced as the default email, calendar, and contacts program. 
+STIG ID: DTOO229 Rule ID: SV-53891r1_rule Vuln ID: V-17753
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_MessageFormats">Rule Title: Message formats must be set to use SMime.
+STIG ID: DTOO260 Rule ID: SV-54004r1_rule Vuln ID: V-17755
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Messageformateditor">Rule Title: Default message format must be set to use Plain Text.
+STIG ID: DTOO314 Rule ID: SV-54062r1_rule Vuln ID: V-26634
+Severity: CAT II Class: Unclass
+Most companies use HTML</string>
+      <string id="ns10_L_Minimumencryptionsettings">Rule Title: Outlook minimum encryption key length settings must be set.
+STIG ID: DTOO316 Rule ID: SV-54064r1_rule Vuln ID: V-26636
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Missingrootcertificates">Rule Title: Missing Root Certificates warning must be enforced.
+STIG ID: DTOO268 Rule ID: SV-54033r1_rule Vuln ID: V-17756
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_NoPromptLevel1Close">Rule Title: The prompt to display level 1 attachments must be disallowed when closing an item.
+STIG ID: DTOO242 Rule ID: SV-53957r1_rule Vuln ID: V-17602
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_NoPromptLevel1Send">Rule Title: The prompt to display level 1 attachments must be disallowed when sending an item.
+STIG ID: DTOO243 Rule ID: SV-53976r1_rule Vuln ID: V-17601
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_OOMAddressAccess">Rule Title: Object Model Prompt behavior for programmatic access of user address data must be configured.
+STIG ID: DTOO251 Rule ID: SV-53998r1_rule Vuln ID: V-17572
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_OOMAddressBook">Rule Title: Object Model Prompt behavior for programmatic address books must be configured.
+STIG ID: DTOO250 Rule ID: SV-53997r1_rule Vuln ID: V-17568
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_OOMFormula">Rule Title: Object Model Prompt behavior for accessing User Property Formula must be configured.
+STIG ID: DTOO254 Rule ID: SV-54001r1_rule Vuln ID: V-17570
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_OOMMeetingTaskRequest">Rule Title: Object Model Prompt behavior for Meeting and Task Responses must be configured.
+STIG ID: DTOO252 Rule ID: SV-55912r1_rule Vuln ID: V-17573
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_OOMSaveAs">Rule Title: Object Model Prompt behavior for the SaveAs method must be configured.
+STIG ID: DTOO253 Rule ID: SV-54000r1_rule Vuln ID: V-17571
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_OOMSend">Rule Title: Object Model Prompt for programmatic email send behavior must be configured.
+STIG ID: DTOO249 Rule ID: SV-53996r1_rule Vuln ID: V-17574
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_OnExecuteCustomActionOOM">Rule Title: Custom Outlook Object Model (OOM) action execution prompts must be configured.
+STIG ID: DTOO247 Rule ID: SV-53994r1_rule Vuln ID: V-17802
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_OutlookRichTextoptions">Rule Title: Outlook Rich Text options must be set for converting to plain text format.
+STIG ID: DTOO344 Rule ID: SV-54067r1_rule Vuln ID: V-26633
+Severity: CAT II Class: Unclass
+Most companies use HTML</string>
+      <string id="ns10_L_OutlookSecurityMode">Rule Title: Outlook Security Mode must be configured to use Group Policy settings.
+STIG ID: DTOO239 Rule ID: SV-53934r1_rule Vuln ID: V-17760
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_PermitdownloadofcontentfromSafeSenderandRecipientlists">Rule Title: Automatic download content for email in Safe Senders list must be disallowed.
+STIG ID: DTOO271 Rule ID: SV-54044r1_rule Vuln ID: V-17739
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Permitdownloadofcontentfromsafezones">Rule Title: Permit download of content from safe zones must be configured.
+STIG ID: DTOO272 Rule ID: SV-54046r1_rule Vuln ID: V-17470
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Plaintextoptions">Rule Title: Plain Text Options for outbound email must be configured.
+STIG ID: DTOO228 Rule ID: SV-53887r1_rule Vuln ID: V-17761
+Severity: CAT II Class: Unclass
+Most companies use HTML</string>
+      <string id="ns10_L_PreventpublishingtoOfficeOnline">Rule Title: Publishing calendars to Office Online must be prevented.
+STIG ID: DTOO216 Rule ID: SV-53869r1_rule Vuln ID: V-17763
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_PreventpublishingtoaDAVserver">Rule Title: Publishing to a Web Distributed and Authoring (DAV) server must be prevented.
+STIG ID: DTOO217 Rule ID: SV-53870r1_rule Vuln ID: V-17762
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Preventusersfromcustomizingattachmentsecuritysettings">Rule Title: Users customizing attachment security settings must be prevented.
+STIG ID: DTOO238 Rule ID: SV-53929r1_rule Vuln ID: V-17766
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Promptusertochoosesecuritysettingsifdefaultsettingsfail">Rule Title: Outlook must be configured not to prompt users to choose security settings if default settings fail.
+STIG ID: DTOO315 Rule ID: SV-54063r1_rule Vuln ID: V-26635
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Reademailasplaintext">Rule Title: Read EMail as plain text must be enforced.
+STIG ID: DTOO214 Rule ID: SV-53867r1_rule Vuln ID: V-17770
+Severity: CAT II Class: Unclass
+Most companies use HTML</string>
+      <string id="ns10_L_Readsignedemailasplaintext">Rule Title: Read signed email as plain text must be enforced.
+STIG ID: DTOO215 Rule ID: SV-53868r1_rule Vuln ID: V-17771
+Severity: CAT II Class: Unclass
+Most companies use HTML</string>
+      <string id="ns10_L_RepliesOrForwardsToSignedEncryptedMessagesAreSignedEncrypted">Rule Title: Replies or forwards to signed/encrypted messages must be signed/encrypted.
+STIG ID: DTOO317 Rule ID: SV-54065r1_rule Vuln ID: V-26637
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Restrictlevelofcalendardetails">Rule Title: Level of calendar details that a user can publish must be restricted.
+STIG ID: DTOO218 Rule ID: SV-53871r1_rule Vuln ID: V-17776
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Restrictuploadmethod">Rule Title: Upload method for publishing calendars to Office Online must be restricted.
+STIG ID: DTOO220 Rule ID: SV-53873r1_rule Vuln ID: V-17777
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_RetrievingCRLsCertificateRevocationLists">Rule Title: Retrieving of CRL data must be set for online action.
+STIG ID: DTOO267 Rule ID: SV-54031r1_rule Vuln ID: V-17778
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_RuninFIPScompliantmode">Rule Title: Run in FIPS compliant mode must be enforced.
+STIG ID: DTOO262 Rule ID: SV-54005r1_rule Vuln ID: V-17787
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_SMIMEinteroperabilitywithexternalclients">Rule Title: S/Mime interoperability with external clients for message handling must be configured.
+STIG ID: DTOO257 Rule ID: SV-54003r1_rule Vuln ID: V-17790
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_SMIMEreceiptrequests">Rule Title: Automatic sending s/Mime receipt requests must be disallowed.
+STIG ID: DTOO266 Rule ID: SV-54029r1_rule Vuln ID: V-17795
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_SecurityLevelOutlook">Rule Title: Always warn on untrusted macros must be enforced.
+STIG ID: DTOO276 Rule ID: SV-54050r1_rule Vuln ID: V-17798
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_Sendallsignedmessagesasclearsignedmessages">Rule Title: Send all signed messages as clear signed messages must be configured.
+STIG ID: DTOO264 Rule ID: SV-54023r1_rule Vuln ID: V-17800
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_SetTrustedAddins">Rule Title: Trusted add-ins behavior for email must be configured.
+STIG ID: DTOO256 Rule ID: SV-54002r1_rule Vuln ID: V-17575
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_SignatureWarning">Rule Title: Warning about invalid signatures must be enforced.
+STIG ID: DTOO265 Rule ID: SV-54024r1_rule Vuln ID: V-17803
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_SynchronizeOutlookRSSFeedswithCommonFeedList">Rule Title: RSS feed synchronization with Common Feed List must be disallowed.
+STIG ID: DTOO281 Rule ID: SV-54054r1_rule Vuln ID: V-17806
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_TrustEmailfromContacts">Rule Title: Trust EMail from senders in receivers contact list must be enforced.
+STIG ID: DTOO223 Rule ID: SV-53882r1_rule Vuln ID: V-17807
+Severity: CAT II Class: Unclass</string>
+      <string id="ns10_L_TurnoffRSSfeature">Rule Title: RSS Feeds must be disallowed.
+STIG ID: DTOO282 Rule ID: SV-54055r1_rule Vuln ID: V-17808
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_AllowTrustedLocationsOnTheNetwork">Rule Title: Disallowance of Trusted Locations on the network must be enforced.
+STIG ID: DTOO134 Rule ID: SV-53494r1_rule Vuln ID: V-17520
+Severity: CAT II Class: Unclass
+Most companies use this</string>
+      <string id="ns11_L_Determinewhethertoforceencryptedppt">Rule Title: Enforce encrypted macros to be scanned in open XML documents must be determined and configured.
+STIG ID: DTOO142 Rule ID: SV-53498r1_rule Vuln ID: V-17473
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_DisableSlideUpdate">Rule Title: The configuration for Slide Update with counterparts must be disallowed.
+STIG ID: DTOO319 Rule ID: SV-53533r1_rule Vuln ID: V-26639
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_DisableTrustBarNotificationforunsigned">Rule Title: Trust Bar Notifications for unsigned application add-ins must be blocked.
+STIG ID: DTOO131 Rule ID: SV-53486r1_rule Vuln ID: V-17187
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_DisableTrustedLoc">Rule Title: All automatic loading from Trusted Locations must be disabled.
+STIG ID: DTOO133 Rule ID: SV-53492r1_rule Vuln ID: V-17471
+Severity: CAT II Class: Unclass
+Most companies use this</string>
+      <string id="ns11_L_DoNotOpenFilesFromTheInternetZoneInProtectedView">Rule Title: Files from the Internet zone must be opened in Protected View.
+STIG ID: DTOO121 Rule ID: SV-53473r2_rule Vuln ID: V-26614
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_DoNotOpenFilesInUnsafeLocationsInProtectedView">Rule Title: Files in unsafe locations must be opened in Protected View.
+STIG ID: DTOO288 Rule ID: SV-53517r1_rule Vuln ID: V-26615
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_DownloadImages">Rule Title: Automatic download of linked images must be disallowed.
+STIG ID: DTOO291 Rule ID: SV-55919r1_rule Vuln ID: V-17809
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_Makehiddenmarkupvisible">Rule Title: Hidden markup options must be visible.
+STIG ID: DTOO290 Rule ID: SV-53522r1_rule Vuln ID: V-17752
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_RequirethatApplicationExtensionsaresigned">Rule Title: Add-ins to Office applications must be signed by a Trusted Publisher.
+STIG ID: DTOO127 Rule ID: SV-53481r1_rule Vuln ID: V-26589
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_RunPrograms">Rule Title: The ability to run programs from a PowerPoint presentation must be disallowed.
+STIG ID: DTOO289 Rule ID: SV-53519r1_rule Vuln ID: V-17788
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_SavePowerPointfilesas">Rule Title: The Save commands default file format must be configured.
+STIG ID: DTOO139 Rule ID: SV-53496r1_rule Vuln ID: V-17521
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_SetDefaultFileBlockBehavior">Rule Title: Blocking as default file block opening behavior must be enforced.
+STIG ID: DTOO110 Rule ID: SV-53468r1_rule Vuln ID: V-26612
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_SetDocumentBehaviorIfFileValidationFails">Rule Title: Document behavior if file validation fails must be set.
+STIG ID: DTOO292 Rule ID: SV-53524r1_rule Vuln ID: V-26616
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_TrustaccesstoVisualBasicProject">Rule Title: Trust access for VBA must be disallowed.
+STIG ID: DTOO146 Rule ID: SV-53505r1_rule Vuln ID: V-17522
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_TurnOffFileValidation">Rule Title: Configuration for file validation must be enforced.
+STIG ID: DTOO119 Rule ID: SV-53471r1_rule Vuln ID: V-26592
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_TurnOffProtectedViewForAttachmentsOpenedFromOutlook">Rule Title: Attachments opened from Outlook must be in Protected View.
+STIG ID: DTOO293 Rule ID: SV-53526r2_rule Vuln ID: V-26617
+Severity: CAT II Class: Unclass</string>
+      <string id="ns11_L_VBAWarningsPolicy">Rule Title: Warning Bar settings for VBA macros must be configured.
+STIG ID: DTOO304 Rule ID: SV-53528r1_rule Vuln ID: V-17545
+Severity: CAT II Class: Unclass</string>
+      <string id="ns13_L_DisableTrustBarNotificationforunsigned">Rule Title: Trust Bar Notifications for unsigned application add-ins must be blocked.
+STIG ID: DTOO131 Rule ID: SV-53243r1_rule Vuln ID: V-17187
+Severity: CAT II Class: Unclass</string>
+      <string id="ns13_L_Preventfatallycorruptfilesfromopening">Rule Title: Fatally corrupt files must be blocked from opening.
+STIG ID: DTOO322 Rule ID: SV-53255r1_rule Vuln ID: V-26707
+Severity: CAT II Class: Unclass</string>
+      <string id="ns13_L_PublisherAutomationSecurityLevel">Rule Title: The Publisher Automation Security Level must be configured for high security.
+STIG ID: DTOO323 Rule ID: SV-53256r1_rule Vuln ID: V-26708
+Severity: CAT II Class: Unclass</string>
+      <string id="ns13_L_RequirethatApplicationExtensionsaresigned">Rule Title: Add-ins to Office applications must be signed by a Trusted Publisher.
+STIG ID: DTOO127 Rule ID: SV-53241r1_rule Vuln ID: V-26589
+Severity: CAT II Class: Unclass</string>
+      <string id="ns13_L_VBAWarningsPolicy">Rule Title: Warning Bar settings for VBA macros must be configured.
+STIG ID: DTOO304 Rule ID: SV-53248r1_rule Vuln ID: V-17545
+Severity: CAT II Class: Unclass</string>
+      <string id="ns14_L_DisableTrustBarNotificationforunsigned">Rule Title: Trust Bar Notifications for unsigned applications must be disabled.
+STIG ID: DTOO131 Rule ID: SV-52796r1_rule Vuln ID: V-40738
+Severity: CAT II Class: Unclass</string>
+      <string id="ns14_L_RequirethatApplicationExtensionsaresigned">Rule Title: Add-ins to Office applications must be signed by a Trusted Publisher.
+STIG ID: DTOO127 Rule ID: SV-52794r1_rule Vuln ID: V-40736
+Severity: CAT II Class: Unclass</string>
+      <string id="ns14_L_VBAWarningsPolicy">Rule Title: Warning Bar settings for VBA macros must be configured.
+STIG ID: DTOO304 Rule ID: SV-52800r1_rule Vuln ID: V-40742
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_AllowTrustedLocationsOnTheNetwork">Rule Title: Disallowance of trusted locations on the network must be enforced.
+STIG ID: DTOO134 Rule ID: SV-53572r1_rule Vuln ID: V-17520
+Severity: CAT II Class: Unclass
+Most companies use this</string>
+      <string id="ns15_L_CustomMarkupWarning">Rule Title: Word must be configured to warn when opening a document with custom XML markup.
+STIG ID: DTOO426 Rule ID: SV-53598r1_rule Vuln ID: V-41147
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_DeterminewhethertoforceencryptedWord">Rule Title: Force encrypted macros to be scanned in open XML documents must be determined and configured.
+STIG ID: DTOO142 Rule ID: SV-53575r1_rule Vuln ID: V-17473
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_DisableTrustBarNotificationforunsigned">Rule Title: Trust Bar Notifications for unsigned application add-ins must be blocked.
+STIG ID: DTOO131 Rule ID: SV-53566r1_rule Vuln ID: V-17187
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_DisableTrustedLoc">Rule Title: All automatic loading from trusted locations must be disabled.
+STIG ID: DTOO133 Rule ID: SV-53571r1_rule Vuln ID: V-17471
+Severity: CAT II Class: Unclass
+Most companies use this</string>
+      <string id="ns15_L_DoNotOpenFilesFromTheInternetZoneInProtectedView">Rule Title: Files from the Internet zone must be opened in Protected View.
+STIG ID: DTOO121 Rule ID: SV-53560r1_rule Vuln ID: V-26614
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_DoNotOpenFilesInUnsafeLocationsInProtectedView">Rule Title: Files in unsafe locations must be opened in Protected View.
+STIG ID: DTOO288 Rule ID: SV-53579r1_rule Vuln ID: V-26615
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_DoNotUseOnlineTranslationDictionaries">Rule Title: Online translation dictionaries must not be used.
+STIG ID: DTOO328 Rule ID: SV-53588r2_rule Vuln ID: V-26648
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_RequirethatApplicationExtensionsaresigned">Rule Title: Add-ins to Office applications must be signed by a Trusted Publisher.
+STIG ID: DTOO127 Rule ID: SV-53564r1_rule Vuln ID: V-26589
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_SaveWordfilesas">Rule Title: The Save commands default file format must be configured.
+STIG ID: DTOO139 Rule ID: SV-53574r1_rule Vuln ID: V-17521
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_SetDefaultFileBlockBehavior">Rule Title: Blocking as default file block opening behavior must be enforced.
+STIG ID: DTOO110 Rule ID: SV-53555r1_rule Vuln ID: V-26612
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_SetDocumentBehaviorIfFileValidationFails">Rule Title: Document behavior if file validation fails must be set.
+STIG ID: DTOO292 Rule ID: SV-53581r1_rule Vuln ID: V-26616
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_TrustaccesstoVisualBasicProject">Rule Title: Trust access for VBA must be disallowed.
+STIG ID: DTOO146 Rule ID: SV-53576r1_rule Vuln ID: V-17522
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_TurnOffFileValidation">Rule Title: Configuration for file validation must be enforced.
+STIG ID: DTOO119 Rule ID: SV-53559r1_rule Vuln ID: V-26592
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_TurnOffProtectedViewForAttachmentsOpenedFromOutlook">Rule Title: Attachments opened from Outlook must be in Protected View.
+STIG ID: DTOO293 Rule ID: SV-53582r1_rule Vuln ID: V-26617
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_UpdateautomaticlinksatOpen">Rule Title: The automatically update links feature must be disabled.
+STIG ID: DTOO302 Rule ID: SV-53584r1_rule Vuln ID: V-17811
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_VBAWarningsPolicy">Rule Title: Warning Bar settings for VBA macros must be configured.
+STIG ID: DTOO304 Rule ID: SV-53586r2_rule Vuln ID: V-17545
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_Warnbeforeprintingsavingorsendingafilethatcontainstrackedcha">Rule Title: A warning before printing that the document contains tracking changes must be provided.
+STIG ID: DTOO303 Rule ID: SV-53585r1_rule Vuln ID: V-17813
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_Word2000BinaryDocumentsAndTemplates">Rule Title: Word 2000 binary documents and templates must be configured to edit in protected view.
+STIG ID: DTOO334 Rule ID: SV-53591r1_rule Vuln ID: V-26654
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_Word2AndEarlierBinaryDocumentsAndTemplates">Rule Title: Word 2 and earlier binary documents and templates must be blocked for open/save.
+STIG ID: DTOO333 Rule ID: SV-53590r1_rule Vuln ID: V-26653
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_Word6Pt0BinaryDocumentsAndTemplates">Rule Title: Word 6.0 binary documents and templates must be configured for block open/save actions.
+STIG ID: DTOO336 Rule ID: SV-53593r1_rule Vuln ID: V-26656
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_Word95BinaryDocumentsAndTemplates">Rule Title: Word 95 binary documents and templates must be configured to edit in protected view.
+STIG ID: DTOO337 Rule ID: SV-53594r1_rule Vuln ID: V-26657
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_Word97BinaryDocumentsAndTemplates">Rule Title: Word 97 binary documents and templates must be configured to edit in protected view.
+STIG ID: DTOO338 Rule ID: SV-53595r1_rule Vuln ID: V-26658
+Severity: CAT II Class: Unclass</string>
+      <string id="ns15_L_WordXPBinaryDocumentsAndTemplates">Rule Title: Word XP binary documents and templates must be configured to edit in protected view.
+STIG ID: DTOO339 Rule ID: SV-55922r1_rule Vuln ID: V-26659
+Severity: CAT II Class: Unclass</string>
+    </stringTable>
+  </resources>
+</policyComments>
