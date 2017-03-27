@@ -9,6 +9,7 @@ Machine Name,Policy Target,Subcategory,Subcategory GUID,Inclusion Setting,Exclus
 ,System,Audit Logon,{0cce9215-69ae-11d9-bed3-505054503030},Success and Failure,,3
 ,System,Audit Special Logon,{0cce921b-69ae-11d9-bed3-505054503030},Success,,1
 ,System,Audit Handle Manipulation,{0cce9223-69ae-11d9-bed3-505054503030},Failure,,2
+,System,Audit Other Object Access Events,{0cce9227-69ae-11d9-bed3-505054503030},Success and Failure,,3
 ,System,Audit Audit Policy Change,{0cce922f-69ae-11d9-bed3-505054503030},Success and Failure,,3
 ,System,Audit Authentication Policy Change,{0cce9230-69ae-11d9-bed3-505054503030},Success,,1
 ,System,Audit Sensitive Privilege Use,{0cce9228-69ae-11d9-bed3-505054503030},Success and Failure,,3
