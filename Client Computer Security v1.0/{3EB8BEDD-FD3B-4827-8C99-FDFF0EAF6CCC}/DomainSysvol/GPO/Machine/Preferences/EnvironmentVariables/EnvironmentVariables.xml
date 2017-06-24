@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EnvironmentVariables clsid="{BF141A63-327B-438a-B9BF-2C188F13B7AD}"><EnvironmentVariable clsid="{78570023-8373-4a19-BA80-2F150738EA19}" name="__PSLockdownPolicy" status="__PSLockdownPolicy = 4" image="1" desc="This sets powershell to constrained language mode.
+References:
+- https://adsecurity.org/?p=2921
+- https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.core/about/about_language_modes" removePolicy="1" bypassErrors="1" changed="2017-06-24 17:23:19" uid="{E23B8D82-56D7-40C7-BDAF-D71DF0AA0A89}"><Properties action="R" name="__PSLockdownPolicy" value="4" user="0" partial="0"/></EnvironmentVariable>
+</EnvironmentVariables>
