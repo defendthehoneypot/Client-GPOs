@@ -1,4 +1,4 @@
-#<p align="center">Client User Security Group Policy</p>
+# <p align="center">Client User Security Group Policy</p>
 
 This policy has the basic user security settings for Java.  The best way to setup Java is make all the configuration settings for java on your local computer, such as Exceptions sites and any changes needed under advanced security, then copy it to a network location.
 
