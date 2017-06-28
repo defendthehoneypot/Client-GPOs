@@ -19,7 +19,7 @@ This policy establishes the basic OS policy, that includes the necessary setting
   1. Username.wk ? This username is an example naming convention.
 5. Add the username.wk account as a member of USR_Desktop_WKAdmins and then add USR_Desktop_WKAdmins as a member of ACL_Workstation_LocalAdmins.
 
-#User Rights Assignment
+# User Rights Assignment
 
 The first section will be Computer Configuration > Polices > Windows Settings > Security Settings > Local policies > User Rights Assignment.  This area of the Group Policy that controls much of the access to a system.
 
@@ -30,7 +30,7 @@ The first section will be Computer Configuration > Polices > Windows Settings > 
   1. ACL_Workstation_LocalAdmins.
   ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/manageauditlog.png "manageauditlog")
 
-#Security Options
+# Security Options
 
 Computer Configuration > Polices > Windows Settings > Security Settings > Local Policies > Security Options.  There are no settings to adjust in this section but there are a few settings that need some explanation.
 
@@ -38,43 +38,43 @@ Computer Configuration > Polices > Windows Settings > Security Settings > Local 
 2. Interactive logon: Number of previous logons to cache (in case domain controller is not available) ? The STIG requires this to be set at 4 or less.  This GPO sets it to 0 because there is no reason to logon if the network is not available.
 3. Network security:  Configure encryption types allowed for Kerberos ? the STIG has only the highest values set but sometimes environments have older systems that require RC4_HMAC_MD5 and DES_CBC_MD5/CRC.
 
-#NOTE:  LAPTOPS WILL REQUIRE A SEPARATE POLICY WITH AT LEAST 4 LOGONS CACHED
+# NOTE:  LAPTOPS WILL REQUIRE A SEPARATE POLICY WITH AT LEAST 4 LOGONS CACHED
 
-#File System
+# File System
 
 1. There are three entries for each of the event logs that need to be secured.  Open each entry and add the domain group ACL_Workstation_LocalAdmins with full control.
 ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/eventlogpermissions.png "eventlogpermissions")
 2. Removing user permissions from administrative binaries.  Look in the included .htm file for a complete list.
 
-#Windows Firewall
+# Windows Firewall
 
 Computer Configuration > Polices > Windows Settings > Security Settings > Windows Firewall with Advanced Security.  Windows Firewall is an import element to reduce lateral movement of attackers.  The firewall is set to block all inbound and allow all outbound traffic for all three profiles.  The firewall will need to have some rules created/modified to fit your organization.  The rules are setup to only use port/protocol and remote Address.  It does not take advantage of the additional security measures that Microsoft allows for domain joined computers. 
 
 1. The first rule is Allow admin/server access.  Anyone who has administrative access to client systems should be restricted to a unique subnet so this rule can be restricted.  It also mentions server access.  Ideally there are only a few servers that initiate connections to client computers.  An example would be a vulnerability scanner.  Ensure any servers are added to this rule that need access to the clients.
 2. The second rule is to allow DHCP responses back.  There is a specific setting to allow unicast responses back to the client but I have found that sometimes does not work, so a rule was created to specifically allow the DHCP responses back.
 
-#Network List Manager Policies
+# Network List Manager Policies
 
 Computer Configuration > Polices > Windows Settings > Security Settings > Network List Manager Polices.  These settings work in conjunction with the Windows Firewall and should be set.  All unidentified and identifying networks have been forced to use public.
 
 1. Domainname.com ? Set the Name option to the organizations name.
 
-#Local Account Password Solution (LAPS)
+# Local Account Password Solution (LAPS)
 
 LAPS is a Microsoft solution to manage the password of the local administrator account.  This protects systems by setting a different randomized password on the clients.  It then stores the password in the Active Directory computer object.  Download the LAPS solution from Microsoft here.  If LAPS is not configured the GPO will have no affect on the systems, except to generate errors in the event logs.
 1. LAPS can be download from here: https://www.microsoft.com/en-us/download/details.aspx?id=46899
 
-#NOTE: IN ORDER TO CONFIGURE THE LAPS SETTINGS, IT IS ASSUMED THE SOLUTION HAS BEEN DEPLOYED ALREADY.
+# NOTE: IN ORDER TO CONFIGURE THE LAPS SETTINGS, IT IS ASSUMED THE SOLUTION HAS BEEN DEPLOYED ALREADY.
 
 Name of administrator account to manage ? Modify this setting to the name of the Local Administrator account you created.
 
-#Offer Remote Assistance
+# Offer Remote Assistance
 
 Computer Configuration > Administrative Templates > System > Remote Assistance Configure Offer Remote Assistance.  Modify this setting and click on ?Show? and add in the ACL_Workstation_LocalAdmins group created earlier in this paper.
 
-#NOTE: IF YOUR COMPANY DOES NOT USE REMOTE ASSISTANCE, DISABLE THIS SETTING.
+# NOTE: IF YOUR COMPANY DOES NOT USE REMOTE ASSISTANCE, DISABLE THIS SETTING.
 
-#Preferences
+# Preferences
 
 Computer Configuration > Preferences > Control Panel Settings > Local Users and Groups.  These are the settings to control access to the local groups on the client computers.  Sort the accounts by the Order column.  In each of the following Preferences remove my placeholders and add the appropriate local user or domain account.
 
@@ -97,4 +97,4 @@ Computer Configuration > Preferences > Control Panel Settings > Local Users and 
 7. Offer Remote Assistance Helpers ? Modify this group and change the place holder group with the Domain Local group created earlier in this paper.  If your company does not use Remote Assistance, remove the GPO entry.
 
 
-#NOTE:  THE BEST PRACTICE IS TO ADD STANDARD DOMAIN USER ACCOUNTS TO ALLOW RDP ACCESS AND THEN FORCE THEM TO PERFORM A RUN AS TO PERFORM ADMINISTRATIVE TASKS.  SINCE THE LOGON CACHE IS SET TO 0, THIS HELPS MITIGATE THE RISK OF LEAVING ADMINISTRATIVE CACHED CREDENTIALS ON THE CLIENTS.
+# NOTE:  THE BEST PRACTICE IS TO ADD STANDARD DOMAIN USER ACCOUNTS TO ALLOW RDP ACCESS AND THEN FORCE THEM TO PERFORM A RUN AS TO PERFORM ADMINISTRATIVE TASKS.  SINCE THE LOGON CACHE IS SET TO 0, THIS HELPS MITIGATE THE RISK OF LEAVING ADMINISTRATIVE CACHED CREDENTIALS ON THE CLIENTS.
