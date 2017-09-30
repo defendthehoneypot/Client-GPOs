@@ -54,7 +54,7 @@ Computer Configuration > Polices > Windows Settings > Security Settings > Window
 2. The second rule is to allow DHCP responses back.  There is a specific setting to allow unicast responses back to the client but I have found that sometimes does not work, so a rule was created to specifically allow the DHCP responses back.
 
 # Windows AppLocker
-1. AppLocker is set to enforced with default policies.  It also duplicates the restrictings for users executing binaries.  Pick one of the options, i.e. File System permission restrictions or AppLocker and remove the other one.
+1. AppLocker is set to enforced with default policies.  It also duplicates the restrictions for users executing binaries.  Pick one of the options, i.e. File System permission restrictions or AppLocker and remove the other one.
    1. Executable rules
    ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/applocker-executable-rules.png "Applocker Executable Rules")
    2. Windows Installer Rules
