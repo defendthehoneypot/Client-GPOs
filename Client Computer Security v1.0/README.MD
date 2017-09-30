@@ -43,8 +43,12 @@ Computer Configuration > Polices > Windows Settings > Security Settings > Local 
 # File System
 
 1. There are three entries for each of the event logs that need to be secured.  Open each entry and add the domain group ACL_Workstation_LocalAdmins with full control.
+
 ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/eventlogpermissions.png "eventlogpermissions")
-2. Removing user permissions from administrative binaries.  Look in the settings tab to view a complete list.  These settings are duplicated in the Application Control Policies.  Pick one method and remove the other one.
+
+2. Removing user permissions from administrative binaries.  These settings are duplicated in the Application Control Policies.  Pick one method and remove the other one.
+
+![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/file-system-permissions.png "File System Permissions")
 
 # Windows Firewall
 
@@ -60,12 +64,15 @@ AppLocker is set to enforced with default policies.  It also duplicates the rest
    1. Executable rules.
    
    ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/applocker-executable-rules.png "Applocker Executable Rules")
+   
    2. Windows Installer Rules.
    
    ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/applocker-windows-installer-rules.png "Applocker Windows Installer Rules")
+   
    3. Script Rules.
    
    ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/applocker-script-rules.png "Applocker Script Rules")
+   
    4. Packaged App Rules.
    
    ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/applocker-packagedapp-rules.png "Applocker Packaged App Rules")
