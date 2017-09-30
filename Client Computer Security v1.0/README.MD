@@ -55,7 +55,8 @@ Computer Configuration > Polices > Windows Settings > Security Settings > Window
 
 # Windows AppLocker
 
-1. AppLocker is set to enforced with default policies.  It also duplicates the restrictions for users executing binaries.  Pick one of the options, i.e. File System permission restrictions or AppLocker and remove the other one.
+Computer Configuration > Policies > Windows Settings > Security Settings > Application Control Policies.
+AppLocker is set to enforced with default policies.  It also duplicates the restrictions for users executing binaries.  Pick one of the options, i.e. File System permission restrictions or AppLocker and remove the other one.
    1. Executable rules
 ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/applocker-executable-rules.png "Applocker Executable Rules")
    2. Windows Installer Rules
