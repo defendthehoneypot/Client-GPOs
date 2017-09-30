@@ -1,4 +1,4 @@
-# <p align="center">Client Computer Security Group Policy</p>
+# <p align="center">Client Computer Security Group Policy</p> 
  
 This policy establishes the basic OS policy, that includes the necessary settings for User Rights Assignment, Security Options, Windows Firewall, Network List Manager, LAPS, Remote Assistance and Local Users and Groups (Preferences).  This section will be broken down into individual sections so they can be explained further.  As part of applying this GPO we are going to setup role based access to make changing administrative access easier in the future.  Keep in mind, some organizations already have a well-designed Active Directory and will require the creation of new groups and OUs, but this document will attempt to provide some guidance if the organization does not already have something in place.  It also helps to create new OUs and groups if you are migrating to a new design for tracking purposes.  All security group and user account naming conventions are an example to help organizations that do not have a standard convention.
 
