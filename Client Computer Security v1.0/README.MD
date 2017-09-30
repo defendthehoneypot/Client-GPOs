@@ -44,7 +44,7 @@ Computer Configuration > Polices > Windows Settings > Security Settings > Local 
 
 1. There are three entries for each of the event logs that need to be secured.  Open each entry and add the domain group ACL_Workstation_LocalAdmins with full control.
 ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/eventlogpermissions.png "eventlogpermissions")
-2. Removing user permissions from administrative binaries.  Look in the included .htm file for a complete list.
+2. Removing user permissions from administrative binaries.  Look in the settings tab to view a complete list
 
 # Windows Firewall
 
@@ -53,11 +53,23 @@ Computer Configuration > Polices > Windows Settings > Security Settings > Window
 1. The first rule is Allow admin/server access.  Anyone who has administrative access to client systems should be restricted to a unique subnet so this rule can be restricted.  It also mentions server access.  Ideally there are only a few servers that initiate connections to client computers.  An example would be a vulnerability scanner.  Ensure any servers are added to this rule that need access to the clients.
 2. The second rule is to allow DHCP responses back.  There is a specific setting to allow unicast responses back to the client but I have found that sometimes does not work, so a rule was created to specifically allow the DHCP responses back.
 
+# Windows AppLocker
+1. AppLocker is set to enforced with default policies.  It also duplicates the restrictings for users executing binaries.  Pick one of the options, i.e. File System permission restrictions or AppLocker and remove the other one.
+   1. Executable rules
+   ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/applocker-executable-rules.png "Applocker Executable Rules")
+   2. Windows Installer Rules
+   ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/applocker-windows-installer-rules.png "Applocker Windows Installer Rules")
+   3. Script Rules
+   ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/applocker-script-rules.png "Applocker Script Rules")
+   4. Packaged App Rules
+   ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/applocker-packagedapp-rules.png "Applocker Packaged App Rules")
+
+
 # Network List Manager Policies
 
 Computer Configuration > Polices > Windows Settings > Security Settings > Network List Manager Polices.  These settings work in conjunction with the Windows Firewall and should be set.  All unidentified and identifying networks have been forced to use public.
 
-1. Domainname.com ? Set the Name option to the organizations name.
+1. Domainname.com Set the Name option to the organizations name.
 
 # Local Account Password Solution (LAPS)
 
