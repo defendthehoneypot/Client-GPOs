@@ -44,7 +44,7 @@ Computer Configuration > Polices > Windows Settings > Security Settings > Local 
 
 1. There are three entries for each of the event logs that need to be secured.  Open each entry and add the domain group ACL_Workstation_LocalAdmins with full control.
 ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/eventlogpermissions.png "eventlogpermissions")
-2. Removing user permissions from administrative binaries.  Look in the settings tab to view a complete list
+2. Removing user permissions from administrative binaries.  Look in the settings tab to view a complete list.  These settings are duplicated in the Application Control Policies.  Pick one method and remove the other one.
 
 # Windows Firewall
 
