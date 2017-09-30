@@ -24,10 +24,10 @@ This policy establishes the basic OS policy, that includes the necessary setting
 The first section will be Computer Configuration > Polices > Windows Settings > Security Settings > Local policies > User Rights Assignment.  This area of the Group Policy that controls much of the access to a system.
 
 1. Deny log on locally ? Adjust this setting to include the group below.  First Remove the place holder name and add the domain group.  This Group is to specifically designed to deny the ability to log on interactively.  I use this for my vulnerability scanning account.  It needs administrative access to the system but does not need to log on.
-  1. ACL_Workstation_DenyLogonLocally.
+   1. ACL_Workstation_DenyLogonLocally.
   ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/denylogonlocally.png "denylogonlocally")
 2. Manage auditing and security log ? Adjust this setting to include the group below.  First Remove the place holder name and add the domain group.  The STIG states this should be a separate domain group but in small organizations it is easier to use the same group that is given local administrative access.
-  1. ACL_Workstation_LocalAdmins.
+   1. ACL_Workstation_LocalAdmins.
   ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/manageauditlog.png "manageauditlog")
 
 # Security Options
