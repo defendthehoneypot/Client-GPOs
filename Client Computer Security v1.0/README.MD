@@ -7,12 +7,12 @@ This policy establishes the basic OS policy, that includes the necessary setting
   2. ACL_Workstation_RDPAccess - This security group is an example naming convention.
   3. ACL_Workstation_DenyLogonLocally - This security group is an example naming convention.
 2. In Active Directory create a new root level OU named **Privileged Accounts**.  Inside this OU create the following sub OUs for each of sections that will have administrative accounts.
-  1. Server Team
-    1. Groups
-    2. Users
-  2. Help Desk
-    1. Groups
-	2. Users
+   1. Server Team
+     1. Groups
+     2. Users
+   2. Help Desk
+     1. Groups
+	 2. Users
 3. In the Groups OU create a new Domain Global Group named as below.
   i. USR_Desktop_WKAdmins ? This security group is an example naming convention.
 4. In the Users OU create a new user account based on company naming convention.
