@@ -46,7 +46,7 @@ Computer Configuration > Polices > Windows Settings > Security Settings > Local 
 
 ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/eventlogpermissions.png "eventlogpermissions")
 
-2. Removing user permissions from administrative binaries.  These settings are duplicated in the Application Control Policies.  Pick one method and remove the other one.
+2. Removing user permissions from administrative binaries.  This is to help mitigate attackers recon use.  This is not really a deterent, but something to slow attackers down while in user space.
 
 ![alt text](https://github.com/defendthehoneypot/Client-GPOs/blob/master/screenshots/file-system-permissions.png "File System Permissions")
 
