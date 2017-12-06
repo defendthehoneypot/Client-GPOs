@@ -5,6 +5,8 @@ The goal of this document is to help implement the DoD/NIST security settings fo
 
 Securing an enterprise network is a daunting task.  Trying to “bake” security into an already existing network can be challenging and often overwhelming.  This leads most organizations to give up or just rely on some type of next generation endpoint product as a magic bullet.  Don’t get me wrong, an enterprise should have a good endpoint protection/logging solution, but Group Policy is the first step in securing your Active Directory environment.
 
+I have another repository that covers Active Directory naming conventions, OU structure breakdown and role based access groups.  [Naming Conventions](https://github.com/defendthehoneypot/NamingConvention)
+
 Let’s break it down into the following areas:
 ##### 1. Patch management and vulnerability scanning
 ##### 2. Administrative account separation
